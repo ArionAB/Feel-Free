@@ -13,7 +13,7 @@ export const Nav = () => {
           alt="Feel Free Events Logo"
         ></img>
       </Link>
-      <div className="flex text-red-600 justify-between w-2/4 ">
+      <div className="flex  justify-between w-3/4 ">
         <Link
           to="/"
           className="bg-black hover:bg-pink text-white font-bold py-2 px-4 rounded-full"
@@ -27,10 +27,16 @@ export const Nav = () => {
           DESPRE NOI
         </Link>
         <Link
+          to="/scenotehnica"
+          className="bg-black hover:bg-pink text-white font-bold py-2 px-4 rounded-full"
+        >
+          SCENOTEHNICA
+        </Link>
+        <Link
           to="/echipamente"
           className="bg-black hover:bg-pink text-white font-bold py-2 px-4 rounded-full"
         >
-          ECHIPAMENTE
+          SONORIZARE
         </Link>
         <Link
           to="/photobooth"
