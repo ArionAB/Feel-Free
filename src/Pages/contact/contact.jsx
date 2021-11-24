@@ -4,7 +4,7 @@ import "../../index.css";
 
 export const Contact = () => {
   return (
-    <div class="flex-col font-bold text-pink box-border">
+    <div class="flex-col font-bold text-gold bg-contact-img bg-no-repeat bg-cover bg-center pl-6">
       <h1 class="flex text-6xl mt-12">CONTACT</h1>
       <div class="flex">
         <div class="flex-col">
@@ -94,14 +94,14 @@ export const Contact = () => {
             <label class="flex flex-col items-start text-xl">
               Mesajul tău
               <textarea
-                class="text-xl p-2 mt-3 mb-3"
-                cols="82"
-                rows="7"
+                class="text-xl p-2 mt-3 mb-3 w-full h-28"
+                // cols="82"
+                // rows="7"
                 placeholder="Mesajul tau..."
               ></textarea>
             </label>
             <button
-              class="bg-black hover:bg-pink text-white font-bold py-2 px-4 rounded-full w-1/4"
+              class="flex justify-center bg-pink hover:bg-black text-white font-bold py-2 px-4 rounded-full w-1/4"
               type="submit"
             >
               Trimite
@@ -111,10 +111,57 @@ export const Contact = () => {
         <div class="mt-12 flex flex-col justify-between h-48">
           <h1 class="text-4xl">Date contact</h1>
           <div class="text-xl font-bold ">
-            <p>0752248261</p>
-            <p>marian.raul@yahoo.com</p>
-            <div>
-              <p>Program:</p>
+            <p className="flex">
+              {" "}
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-6 w-6 mr-2"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+                />
+              </svg>
+              0752248261
+            </p>
+            <p className="flex">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-6 w-6 mr-2"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                />
+              </svg>
+              marian.raul@yahoo.com
+            </p>
+            <div className="flex">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-6 w-6 mr-2"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                />
+              </svg>
+
               <p>Luni-Vineri 9:00-18:00</p>
             </div>
           </div>
