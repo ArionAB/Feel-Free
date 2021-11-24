@@ -8,6 +8,7 @@ module.exports = {
       },
       colors: {
         pink: "#EC4899",
+        yellow: "#FFFF00",
       },
     },
   },
