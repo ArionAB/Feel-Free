@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { Nav } from "./Components/nav/nav";
+import { Nav } from "./Components/nav";
 import { Contact } from "./Pages/contact/contact";
 
 import "./App.css";
