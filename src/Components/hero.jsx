@@ -1,10 +1,40 @@
-import React from "react";
-import cover from "../images/crowd2.jpeg";
+import React, { useState } from "react";
+import Carousel from "./carousel";
+import crowd from "../images/crowd.jpeg";
+import crowd2 from "../images/crowd2.jpeg";
 
 function Hero() {
+  const [index, setIndex] = useState(0);
+  const [width, setWidth] = useState(0);
+  const [xPosition, setXPosition] = useState(0);
+
+  const images = [crowd, crowd2];
+
+  const handleClickPrev = () => {
+    if (index === 0) return;
+    setIndex(index - 1);
+    setXPosition(xPosition + width);
+  };
+
+  const handleClicknext = () => {
+    if (index === images.length - 1) {
+      setIndex(0);
+      setXPosition(0);
+    } else {
+      setIndex(index + 1);
+      setXPosition(xPosition - width);
+    }
+  };
   return (
     <>
       <div className="bg-crowd h-70v flex flex-col justify-center bg-center">
+        <Carousel
+          images={images}
+          setWidth={setWidth}
+          xPosition={xPosition}
+          handleClickPrev={handleClickPrev}
+          handleClicknext={handleClicknext}
+        />
         <h1 className=" text-6xl flex justify-center text-gold pb-8 font-semibold">
           SONORIZARI EVENIMENTE
         </h1>
