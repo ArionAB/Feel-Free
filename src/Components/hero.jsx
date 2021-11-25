@@ -1,40 +1,101 @@
 import React, { useState } from "react";
-import Carousel from "./carousel";
+
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Slider from "react-slick";
 import crowd from "../images/crowd.jpeg";
 import crowd2 from "../images/crowd2.jpeg";
+import photobooth from "../images/photobooth.jpg";
+import photobooth2 from "../images/photobooth2.jpg";
+
+function SampleNextArrow(props) {
+  const { className, style, onClick } = props;
+  return (
+    <div
+      className={className}
+      style={{
+        ...style,
+        display: "block",
+        left: "95%",
+      }}
+      onClick={onClick}
+    />
+  );
+}
+
+function SamplePrevArrow(props) {
+  const { className, style, onClick } = props;
+  return (
+    <div
+      className={className}
+      style={{ ...style, display: "block", left: "4%" }}
+      onClick={onClick}
+    />
+  );
+}
 
 function Hero() {
-  const [index, setIndex] = useState(0);
-  const [width, setWidth] = useState(0);
-  const [xPosition, setXPosition] = useState(0);
-
-  const images = [crowd, crowd2];
-
-  const handleClickPrev = () => {
-    if (index === 0) return;
-    setIndex(index - 1);
-    setXPosition(xPosition + width);
-  };
-
-  const handleClicknext = () => {
-    if (index === images.length - 1) {
-      setIndex(0);
-      setXPosition(0);
-    } else {
-      setIndex(index + 1);
-      setXPosition(xPosition - width);
-    }
+  const settings = {
+    dots: true,
+    fade: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    arrows: true,
+    slidesToScroll: 1,
+    nextArrow: <SampleNextArrow />,
+    prevArrow: <SamplePrevArrow />,
   };
   return (
     <>
-      <div className="bg-crowd h-70v flex flex-col justify-center bg-center">
-        <Carousel
-          images={images}
-          setWidth={setWidth}
-          xPosition={xPosition}
-          handleClickPrev={handleClickPrev}
-          handleClicknext={handleClicknext}
-        />
+      <div>
+        <Slider {...settings}>
+          <div className="h-70v flex flex-col justify-center bg-center relative">
+            <div className="absolute top-1/3 right-1/4">
+              <h1 className=" text-6xl flex justify-center text-gold pb-8 font-semibold mb-16 ">
+                SONORIZARI EVENIMENTE
+              </h1>
+              <h3 className="text-3xl text-white font-medium flex justify-between">
+                ECHIPAMENTE SONORIZARE, ECHIPAMENTE DE LUMINI SI EFECTE SPECIALE
+              </h3>
+            </div>
+            <img src={crowd} className="h-70v w-80v" />
+          </div>
+          <div className="h-70v flex flex-col justify-center bg-center relative">
+            <div className="absolute top-1/3 right-2/4">
+              <h1 className=" text-6xl flex justify-center text-pink pb-8 font-semibold ">
+                PHOTOBOOTH
+              </h1>
+            </div>
+            <img src={photobooth2} className="h-70v w-80v" />
+          </div>
+        </Slider>
+      </div>
+    </>
+  );
+}
+
+export default Hero;
+
+/* {photos.map((photo) => {
+  return (
+    <div className="h-70v flex flex-col justify-center bg-center relative">
+      <div className="absolute top-1/3 right-1/4">
+        <h1 className=" text-6xl flex justify-center text-gold pb-8 font-semibold ">
+          SONORIZARI EVENIMENTE
+        </h1>
+        <h3 className="text-3xl text-white font-medium flex justify-between">
+          ECHIPAMENTE SONORIZARE, ECHIPAMENTE DE LUMINI SI EFECTE
+          SPECIALE
+        </h3>
+      </div>
+      <img src={photo.src} className="h-70v w-80v" />
+    </div>
+  );
+})}
+ */
+
+/* <div className=" bg-crowd h-70v flex flex-col justify-center bg-center">
         <h1 className=" text-6xl flex justify-center text-gold pb-8 font-semibold">
           SONORIZARI EVENIMENTE
         </h1>
@@ -90,9 +151,4 @@ function Hero() {
       <div
         className="flex justify-end
         "
-      ></div>
-    </>
-  );
-}
-
-export default Hero;
+      ></div> */
