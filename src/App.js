@@ -6,6 +6,7 @@ import { Contact } from "./Pages/contact/contact";
 import "./App.css";
 import Home from "./Pages/Home";
 import Footer from "./Components/footer";
+import Scenotehnica from "./Pages/scenotehnica";
 
 function App() {
   return (
@@ -14,7 +15,7 @@ function App() {
       <Routes>
         <Route path="/contact" element={<Contact />} />
         <Route path="/despre-noi" element={""} />
-        <Route path="/scenotehnica" element={""} />
+        <Route path="/scenotehnica" element={<Scenotehnica />} />
         <Route path="/sonorizare" element={""} />
         <Route path="/photobooth" element={""} />
         <Route path="/oferta" element={""} />

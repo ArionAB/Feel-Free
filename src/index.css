@@ -10,7 +10,7 @@
   }
 
   .icon-text {
-    @apply text-gold  bg-dblue text-4xl font-medium px-4 mt-8;
+    @apply text-gold  text-4xl font-medium px-4 mt-8;
   }
 }
 

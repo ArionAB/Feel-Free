@@ -4,7 +4,7 @@ import "../../index.css";
 
 export const Contact = () => {
   return (
-    <div class="flex-col font-bold text-gold bg-contact-img bg-no-repeat bg-cover bg-center pl-6">
+    <div class="flex-col font-bold text-gold bg-footer2 bg-no-repeat bg-cover bg-center pl-6">
       <h1 class="flex text-6xl mt-12">CONTACT</h1>
       <div class="flex">
         <div class="flex-col">
@@ -101,7 +101,7 @@ export const Contact = () => {
               ></textarea>
             </label>
             <button
-              class="flex justify-center bg-pink hover:bg-black text-white font-bold py-2 px-4 rounded-full w-1/4"
+              class="flex justify-center bg-gold  hover:bg-black  hover:text-gold text-black font-bold py-2 px-4 my-8 rounded-full w-1/4"
               type="submit"
             >
               Trimite
