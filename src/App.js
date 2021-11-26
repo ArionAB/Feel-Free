@@ -7,6 +7,7 @@ import "./App.css";
 import Home from "./Pages/Home";
 import Footer from "./Components/footer";
 import Scenotehnica from "./Pages/scenotehnica";
+import Sonorizare from "./Pages/sonorizare";
 
 function App() {
   return (
@@ -16,7 +17,7 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/despre-noi" element={""} />
         <Route path="/scenotehnica" element={<Scenotehnica />} />
-        <Route path="/sonorizare" element={""} />
+        <Route path="/sonorizare" element={<Sonorizare />} />
         <Route path="/photobooth" element={""} />
         <Route path="/oferta" element={""} />
         <Route path="/" element={<Home />} />

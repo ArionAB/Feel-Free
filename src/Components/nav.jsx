@@ -23,7 +23,7 @@ export const Nav = () => {
         <Link to="/scenotehnica" className="btn-nav">
           SCENOTEHNICA
         </Link>
-        <Link to="/echipamente" className="btn-nav">
+        <Link to="/sonorizare" className="btn-nav">
           SONORIZARE
         </Link>
         <Link to="/photobooth" className="btn-nav">
