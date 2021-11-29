@@ -1,40 +1,36 @@
 import React from "react";
 import Slider from "react-slick";
-// import { baseUrl } from "../images";
 
-import fum01 from "../images/fum.jpg";
-import fum02 from "../images/laser.jpg";
-import fum03 from "../images/schela-lumini.jpg";
-import fum4 from "../images/lumini2.jfif";
 import potato01 from "../images/potato01.jpeg";
 import potato02 from "../images/potato02.jpeg";
 import potato03 from "../images/potato03.jpeg";
 import potato04 from "../images/potato04.jpeg";
 
-const baseUrl = "../images";
-// <img src={`${baseUrl}/potato0${i + 1}.jpeg`} />
-//   <img src={`${potato0${...i+1 }}`} />
-
-const photos = [
-  {
-    name: "potato01",
-    src: "../images/potato01.jpeg",
-  },
-  {
-    name: "potato02",
-    src: "../images/potato02.jpeg",
-
-    name: "potato03",
-    src: "../images/potato03.jpeg",
-  },
-];
+import styles from "../index.css";
+function smallImg(props) {
+  const { className, style, onClick } = props;
+  return (
+    <div
+      className={className}
+      style={{
+        ...style,
+        backgroundColor: "red",
+        width: "50",
+      }}
+      onClick={onClick}
+    />
+  );
+}
 
 export const CustomSlide = () => {
   const settings = {
     customPaging: function (i) {
       return (
         <a>
-          <img src={require(`../images/potato0${i + 1}.jpeg`).default}></img>
+          <img
+            src={require(`../images/potato0${i + 1}.jpeg`).default}
+            alt="sound"
+          ></img>
         </a>
       );
     },
@@ -46,34 +42,22 @@ export const CustomSlide = () => {
     slidesToScroll: 1,
   };
   return (
-    <div>
+    <div className="mb-36">
       <h2>Custom Paging</h2>
       <Slider {...settings}>
         <div>
-          <img src={potato01} />
+          <img src={potato01} className=" w-80v h-40v" />
         </div>
         <div>
-          <img src={potato02} />
+          <img src={potato02} className=" w-80v h-40v" />
         </div>
         <div>
-          <img src={potato03} />
+          <img src={potato03} className=" w-80v h-40v" />
         </div>
         <div>
-          <img src={potato04} />
+          <img src={potato04} className=" w-80v h-40v" />
         </div>
       </Slider>
     </div>
   );
 };
-// <div>
-//   <img src={baseUrl + "/potato01.jpeg"} />
-// </div>
-// <div>
-//   <img src={baseUrl + "/potato02.jpeg"} />
-// </div>
-// <div>
-//   <img src={baseUrl + "/potato03.jpeg"} />
-// </div>
-// <div>
-//   <img src={baseUrl + "/potato04.jpeg"} />
-// </div>

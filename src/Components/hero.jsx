@@ -39,7 +39,7 @@ function Hero() {
     dots: false,
     fade: true,
     infinite: true,
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 3000,
     cssEase: "linear",
     speed: 500,
@@ -55,10 +55,10 @@ function Hero() {
         <Slider {...settings}>
           <div className="h-70v flex flex-col justify-center bg-center relative">
             <div className="absolute top-1/3 right-1/4">
-              <h1 className=" text-6xl flex justify-center text-gold pb-8 font-semibold mb-16 ">
+              <h1 className=" text-6xl flex justify-end text-gold pb-8 font-semibold mb-16 ">
                 SONORIZARI EVENIMENTE
               </h1>
-              <h3 className="text-3xl text-white font-medium flex justify-between">
+              <h3 className="text-3xl text-white font-medium absolute text-center">
                 ECHIPAMENTE SONORIZARE, ECHIPAMENTE DE LUMINI SI EFECTE SPECIALE
               </h3>
             </div>

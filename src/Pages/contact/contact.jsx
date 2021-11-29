@@ -4,86 +4,86 @@ import "../../index.css";
 
 export const Contact = () => {
   return (
-    <div class="flex-col font-bold text-gold bg-footer2 bg-no-repeat bg-cover bg-center pl-6">
-      <h1 class="flex text-6xl mt-12">CONTACT</h1>
-      <div class="flex">
-        <div class="flex-col">
-          <h2 class="flex mt-12 text-3xl">
+    <div className="flex-col font-bold text-gold bg-footer2 bg-no-repeat bg-cover bg-center pl-6">
+      <h1 className="flex text-6xl mt-12">CONTACT</h1>
+      <div className="flex">
+        <div className="flex-col">
+          <h2 className="flex mt-12 text-3xl">
             Ne-ar face plăcere să vorbim cu tine!
           </h2>
-          <h2 class="flex mt-3 text-2xl">Formular cerere ofertă</h2>
-          <form class="w-5/5 mr-24">
-            <article class="flex">
-              <article-left class="flex flex-col items-start w-96 text-xl mr-6">
-                <label class="flex flex-col items-start mt-3 ">
+          <h2 className="flex mt-3 text-2xl">Formular cerere ofertă</h2>
+          <form className="w-5/5 mr-24">
+            <article className="flex">
+              <article-left className="flex flex-col items-start w-96 text-xl mr-6">
+                <label className="flex flex-col items-start mt-3 ">
                   Nume:
                   <input
-                    class="w-96 p-2 mt-3 mb-3 "
+                    className="w-96 p-2 mt-3 mb-3 "
                     type="text"
                     name="nume"
                     placeholder="Nume si prenume"
                   ></input>
                 </label>
-                <label class="flex flex-col items-start">
+                <label className="flex flex-col items-start">
                   Email:
                   <input
-                    class="w-96 p-2 mt-3 mb-3 "
+                    className="w-96 p-2 mt-3 mb-3 "
                     type="email"
                     name="email"
                     placeholder="Email"
                   ></input>
                 </label>
-                <label class="flex flex-col items-start">
+                <label className="flex flex-col items-start">
                   Data evenimentului:
                   <input
-                    class="w-96 p-2 mt-3 mb-3 "
+                    className="w-96 p-2 mt-3 mb-3 "
                     type="date"
                     name="data"
                     placeholder="Alege data"
                   ></input>
                 </label>
-                <label class="flex flex-col items-start">
+                <label className="flex flex-col items-start">
                   Tip eveniment:
                   <input
-                    class="w-96 p-2 mt-3 mb-3 "
+                    className="w-96 p-2 mt-3 mb-3 "
                     type="text"
                     name="tip"
                     placeholder="eg: Nunta, Botez, etc"
                   ></input>
                 </label>
               </article-left>
-              <article-right class="flex flex-col items-start w-96 text-xl">
-                <label class="flex flex-col items-start mt-3">
+              <article-right className="flex flex-col items-start w-96 text-xl">
+                <label className="flex flex-col items-start mt-3">
                   Telefon:
                   <input
-                    class="w-96 p-2 mt-3 mb-3 "
+                    className="w-96 p-2 mt-3 mb-3 "
                     type="number"
                     name="telefon"
                     placeholder="Telefon"
                   ></input>
                 </label>
-                <label class="flex flex-col items-start">
+                <label className="flex flex-col items-start">
                   Locație:
                   <input
-                    class="w-96 p-2 mt-3 mb-3 "
+                    className="w-96 p-2 mt-3 mb-3 "
                     type="text"
                     name="locatie"
                     placeholder="Locatie"
                   ></input>
                 </label>
-                <label class="flex flex-col items-start">
+                <label className="flex flex-col items-start">
                   Număr de ore:
                   <input
-                    class="w-96 p-2 mt-3 mb-3 "
+                    className="w-96 p-2 mt-3 mb-3 "
                     type="text"
                     name="ore"
                     placeholder="Numar de ore"
                   ></input>
                 </label>
-                <label class="flex flex-col items-start">
+                <label className="flex flex-col items-start">
                   Număr invitați:
                   <input
-                    class="w-96 p-2 mt-3 mb-3 "
+                    className="w-96 p-2 mt-3 mb-3 "
                     type="text"
                     name="invitati"
                     placeholder="Numar de invitati"
@@ -91,26 +91,26 @@ export const Contact = () => {
                 </label>
               </article-right>
             </article>
-            <label class="flex flex-col items-start text-xl">
+            <label className="flex flex-col items-start text-xl">
               Mesajul tău
               <textarea
-                class="text-xl p-2 mt-3 mb-3 w-full h-28"
+                className="text-xl p-2 mt-3 mb-3 w-full h-28"
                 // cols="82"
                 // rows="7"
                 placeholder="Mesajul tau..."
               ></textarea>
             </label>
             <button
-              class="flex justify-center bg-gold  hover:bg-black  hover:text-gold text-black font-bold py-2 px-4 my-8 rounded-full w-1/4"
+              className="flex justify-center bg-gold  hover:bg-black  hover:text-gold text-black font-bold py-2 px-4 my-8 rounded-full w-1/4"
               type="submit"
             >
               Trimite
             </button>
           </form>
         </div>
-        <div class="mt-12 flex flex-col justify-between h-48">
-          <h1 class="text-4xl">Date contact</h1>
-          <div class="text-xl font-bold ">
+        <div className="mt-12 flex flex-col justify-between h-48">
+          <h1 className="text-4xl">Date contact</h1>
+          <div className="text-xl font-bold ">
             <p className="flex">
               {" "}
               <svg

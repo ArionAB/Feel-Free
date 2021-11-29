@@ -15,3 +15,7 @@
 }
 
 @tailwind utilities;
+
+.slick-dots li {
+  width: 50px;
+}
