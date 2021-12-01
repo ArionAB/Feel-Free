@@ -8,6 +8,7 @@ import Home from "./Pages/Home";
 import Footer from "./Components/footer";
 import Scenotehnica from "./Pages/scenotehnica";
 import Sonorizare from "./Pages/sonorizare";
+import { Photobooth } from "./Pages/photoobooth";
 
 function App() {
   return (
@@ -18,7 +19,7 @@ function App() {
         <Route path="/despre-noi" element={""} />
         <Route path="/scenotehnica" element={<Scenotehnica />} />
         <Route path="/sonorizare" element={<Sonorizare />} />
-        <Route path="/photobooth" element={""} />
+        <Route path="/photobooth" element={<Photobooth />} />
         <Route path="/oferta" element={""} />
         <Route path="/" element={<Home />} />
       </Routes>

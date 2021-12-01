@@ -18,6 +18,7 @@ module.exports = {
         sceno1: "url('./images/scenoBG.jpeg')",
         sceno2: "url('./images/scenoBG2.jpeg')",
         sceno3: "url('./images/scenoBG3.jpeg')",
+        pbCover: "url('./images/pb-coverBW.jpg')",
       },
       colors: {
         pink: "#EC4899",

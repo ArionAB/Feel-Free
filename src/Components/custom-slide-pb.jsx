@@ -6,7 +6,7 @@ import potato02 from "../images/potato02.jpeg";
 import potato03 from "../images/potato03.jpeg";
 import potato04 from "../images/potato04.jpeg";
 
-export const CustomSlide = () => {
+export const CustomSlidePB = () => {
   const settings = {
     customPaging: function (i) {
       return (
@@ -29,16 +29,16 @@ export const CustomSlide = () => {
     <div className="mb-36">
       <Slider {...settings}>
         <div>
-          <img src={potato01} className=" w-80v h-40v" />
+          <img src={potato01} className=" w-80v h-60v" />
         </div>
         <div>
-          <img src={potato02} className=" w-80v h-40v" />
+          <img src={potato02} className=" w-80v h-60v" />
         </div>
         <div>
-          <img src={potato03} className=" w-80v h-40v" />
+          <img src={potato03} className=" w-80v h-60v" />
         </div>
         <div>
-          <img src={potato04} className=" w-80v h-40v" />
+          <img src={potato04} className=" w-80v h-60v" />
         </div>
       </Slider>
     </div>
