@@ -58,20 +58,20 @@ export const Nav = () => {
               >
                 Nunti
               </Link>
-              <Link
-                to="/photobooth"
+              <a
+                href="#botez"
                 className="float-none text-black py-4 px-4 block text-left hover:text-gold hover:bg-black"
               >
                 Botez
-              </Link>
-              <Link
-                to="/photobooth"
+              </a>
+              <a
+                href="#aniversari"
                 className="float-none text-black py-4 px-4 block text-left hover:text-gold hover:bg-black"
               >
                 Aniversari
-              </Link>
+              </a>
               <Link
-                to="/photobooth"
+                to="/accesorii"
                 className="float-none text-black py-4 px-4 block text-left hover:text-gold hover:bg-black"
               >
                 Accesorii & Personalizare

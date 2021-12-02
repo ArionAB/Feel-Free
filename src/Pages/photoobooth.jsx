@@ -30,7 +30,7 @@ export const Photobooth = () => {
       </div>
       <CustomSlidePB />
       <div className="bg-black pb-2 px-6">
-        <h1 className="text-gold text-5xl font-medium py-16 ">
+        <h1 id="botez" className="text-gold text-5xl font-medium py-16 ">
           CABINA FOTO BOTEZ
         </h1>
         <p className="text-white text-justify pr-6">
@@ -52,7 +52,7 @@ export const Photobooth = () => {
       </div>
       <CustomSlidePB />
       <div className="bg-black pb-2 px-6">
-        <h1 className="text-gold text-5xl font-medium py-16 ">
+        <h1 id="aniversari" className="text-gold text-5xl font-medium py-16 ">
           CABINA FOTO ANIVERSĂRI
         </h1>
         <p className="text-white text-justify pr-6">

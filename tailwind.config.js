@@ -1,4 +1,7 @@
+const colors = require("tailwindcss/colors");
+
 module.exports = {
+  mode: "jit",
   purge: ["./src/**/*.{js,jsx,ts,tsx}", "./public/index.html"],
   darkMode: false, // or 'media' or 'class'
   theme: {
@@ -19,12 +22,20 @@ module.exports = {
         sceno2: "url('./images/scenoBG2.jpeg')",
         sceno3: "url('./images/scenoBG3.jpeg')",
         pbCover: "url('./images/pb-coverBW.jpg')",
+        accesorii: "url('./images/Fraps.lnk.jpg')",
       },
+      gradients: {},
+
       colors: {
         pink: "#EC4899",
         gold: "#fec213",
         pinkGrad: "bg-gradient-to-r from-purple-400 via-pink-500 to-red-500",
         dblue: "#2f4a67",
+        yellow: {
+          ...colors.yellow,
+          "bg-gradient-to-b from-black via-gray-900 to-gray-500": "",
+        },
+        darkGrey: "#303030",
       },
       height: {
         "10v": "10vh",

@@ -9,6 +9,7 @@ import Footer from "./Components/footer";
 import Scenotehnica from "./Pages/scenotehnica";
 import Sonorizare from "./Pages/sonorizare";
 import { Photobooth } from "./Pages/photoobooth";
+import Accesorii from "./Pages/accesorii";
 
 function App() {
   return (
@@ -20,7 +21,7 @@ function App() {
         <Route path="/scenotehnica" element={<Scenotehnica />} />
         <Route path="/sonorizare" element={<Sonorizare />} />
         <Route path="/photobooth" element={<Photobooth />} />
-        <Route path="/oferta" element={""} />
+        <Route path="/accesorii" element={<Accesorii />} />
         <Route path="/" element={<Home />} />
       </Routes>
       <Footer />
