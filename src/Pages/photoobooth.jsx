@@ -1,10 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { CustomSlidePB } from "../Components/custom-slide-pb";
+import { YoutubeEmbed } from "../Components/YoutubeEmbed";
 
 export const Photobooth = () => {
   return (
     <div>
+      <div className=" overflow-hidden pb-96 relative h-0">
+        <YoutubeEmbed embedId="tKSsJeCzV3Y" />
+      </div>
       <div className="bg-black pb-2 px-6">
         <h1 className="text-gold text-5xl font-medium py-16 ">
           CABINA FOTO NUNTĂ

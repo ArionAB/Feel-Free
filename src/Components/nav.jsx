@@ -50,7 +50,7 @@ export const Nav = () => {
             </svg>
           </Link>
           {show ? (
-            <div className=" block absolute bg-white w-40 z-10 mt-10 rounded-lg shadow-xl">
+            <div className=" block absolute bg-white w-40 z-10 mt-6 rounded-lg shadow-xl">
               <Link
                 to="/photobooth"
                 className=" float-none text-black py-4 px-4 block text-left hover:text-gold hover:bg-black "
