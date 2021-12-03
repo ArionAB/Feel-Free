@@ -25,38 +25,34 @@ export const PropsSlide = () => {
       <div>
         <Slider {...settings}>
           <div className=" h-40v ">
-            <img
-              src={props}
-              alt="photbooth images"
-              className="h-full w-full object-contain"
-            />
+            <img src={props} alt="photbooth images" className="h-full w-full" />
           </div>
           <div className=" h-40v">
             <img
               src={props1}
               alt="photbooth images"
-              className="h-full w-full object-contain"
+              className="h-full w-full"
             />
           </div>
           <div className=" h-40v">
             <img
               src={props3}
               alt="photbooth images"
-              className="h-full w-full object-contain"
+              className="h-full w-full"
             />
           </div>
           <div className=" h-40v">
             <img
               src={props4}
               alt="photbooth images"
-              className="h-full w-full object-contain"
+              className="h-full w-full"
             />
           </div>
           <div className=" h-40v ">
             <img
               src={props5}
               alt="photbooth images"
-              className=" h-full w-full object-contain
+              className=" h-full w-full
                 "
             />
           </div>
@@ -64,7 +60,7 @@ export const PropsSlide = () => {
             <img
               src={props6}
               alt="photbooth images"
-              className=" h-full w-full object-contain
+              className=" h-full w-full
                 "
             />
           </div>

@@ -14,7 +14,7 @@ export const Contact = () => {
           <h2 className="flex mt-3 text-2xl">Formular cerere ofertă</h2>
           <form className="w-5/5 mr-24">
             <article className="flex">
-              <article-left className="flex flex-col items-start w-96 text-xl mr-6">
+              <article-left className="">
                 <label className="flex flex-col items-start mt-3 ">
                   Nume:
                   <input
@@ -52,8 +52,8 @@ export const Contact = () => {
                   ></input>
                 </label>
               </article-left>
-              <article-right className="flex flex-col items-start w-96 text-xl">
-                <label className="flex flex-col items-start mt-3">
+              <article-right className="">
+                <label className="flex flex-col items-start mt-3 ">
                   Telefon:
                   <input
                     className="w-96 p-2 mt-3 mb-3 "
@@ -74,7 +74,7 @@ export const Contact = () => {
                 <label className="flex flex-col items-start">
                   Număr de ore:
                   <input
-                    className="w-96 p-2 mt-3 mb-3 "
+                    className="w-96 p-2 mt-3 mb-3 pb-3"
                     type="text"
                     name="ore"
                     placeholder="Numar de ore"
@@ -95,8 +95,6 @@ export const Contact = () => {
               Mesajul tău
               <textarea
                 className="text-xl p-2 mt-3 mb-3 w-full h-28"
-                // cols="82"
-                // rows="7"
                 placeholder="Mesajul tau..."
               ></textarea>
             </label>
@@ -170,3 +168,5 @@ export const Contact = () => {
     </div>
   );
 };
+// <article-right className="flex flex-col  items-start w-96 text-xl !ml-3">
+// <article-left className="flex flex-col items-start w-96 text-xl"></article-left>

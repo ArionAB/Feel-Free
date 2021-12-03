@@ -6,7 +6,7 @@ import { PropsSlide } from "../Components/props-slide";
 const Accesorii = () => {
   return (
     <div>
-      <div className="bg-accesorii w-80v h-80v  bg-center bg-cover bg-no-repeat border-b-8 border-indigo-600"></div>
+      <div className="bg-accesorii w-80v h-80v  bg-center bg-cover bg-no-repeat border-b-8 border-gold"></div>
       <div className="flex ">
         <article className="text-white w-40v bg-gradient-to-b from-black via-third to-black bg-opacity-100">
           <h1 className="text-gold text-3xl p-8">DESIGN & PERSONALIZARE</h1>

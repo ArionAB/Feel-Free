@@ -7,7 +7,7 @@ import "../index.css";
 export const Nav = () => {
   const [show, setShow] = useState(false);
   return (
-    <div className="flex justify-between items-center r overflow-hidden">
+    <div className="flex justify-between items-center r overflow-hidden bg-darkGrey">
       <Link to="/">
         <img
           className="h-40 w-40"
@@ -15,25 +15,24 @@ export const Nav = () => {
           alt="Feel Free Events Logo"
         ></img>
       </Link>
-      <div className="flex  justify-between w-3/4 ">
-        <Link to="/" className="btn-nav">
+      <div className="flex  justify-between w-3/4 items-center ">
+        <Link to="/" className="home">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
           HOME
-        </Link>
-        <Link to="/despre-noi" className="btn-nav">
-          DESPRE NOI
-        </Link>
-        <Link to="/scenotehnica" className="btn-nav">
-          SCENOTEHNICA
-        </Link>
-        <Link to="/sonorizare" className="btn-nav">
-          SONORIZARE
         </Link>
         <div
           className="flex overflow-hidden float-left"
           onMouseEnter={() => setShow(!show)}
           onMouseLeave={() => setShow(!show)}
         >
-          <Link to="/photobooth" className="btn-nav flex m-0 ">
+          <Link to="/photobooth" className="home flex">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
             PHOTOBOOTH
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -79,7 +78,26 @@ export const Nav = () => {
             </div>
           ) : null}
         </div>
-        <Link to="/contact" className="btn-nav">
+
+        <Link to="/scenotehnica" className="home">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          SCENOTEHNICA
+        </Link>
+        <Link to="/sonorizare" className="home">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          SONORIZARE
+        </Link>
+        <Link to="/contact" className="home">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
           CONTACT
         </Link>
       </div>

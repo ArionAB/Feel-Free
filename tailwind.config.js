@@ -1,7 +1,6 @@
 const colors = require("tailwindcss/colors");
 
 module.exports = {
-  mode: "jit",
   purge: ["./src/**/*.{js,jsx,ts,tsx}", "./public/index.html"],
   darkMode: false, // or 'media' or 'class'
   theme: {
@@ -39,7 +38,7 @@ module.exports = {
           ...colors.yellow,
           "bg-gradient-to-b from-black via-gray-900 to-gray-500": "",
         },
-        darkGrey: "#303030",
+        darkGrey: "#1c1c1c",
       },
       height: {
         "10v": "10vh",
