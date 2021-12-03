@@ -24,7 +24,11 @@ module.exports = {
         pbCover: "url('./images/pb-coverBW.jpg')",
         accesorii: "url('./images/Fraps.lnk.jpg')",
       },
-      gradients: {},
+      gradientColorStops: (theme) => ({
+        primary: "#303030",
+        secondry: "#262626",
+        third: "#404040",
+      }),
 
       colors: {
         pink: "#EC4899",
