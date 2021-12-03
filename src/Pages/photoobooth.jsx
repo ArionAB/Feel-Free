@@ -9,6 +9,43 @@ export const Photobooth = () => {
       <div className=" overflow-hidden pb-96 relative h-0">
         <YoutubeEmbed embedId="tKSsJeCzV3Y" />
       </div>
+
+      <div className="flex">
+        <div className="mr-8 bg-white text-justify w-40v h-60v border-2 border-gold">
+          <h1 className="bg-gold pl-8 py-2 mb-7">Informatii</h1>
+          <p className="px-8 mb-5">
+            <b>Cabina foto OGLINDĂ</b> este un produs de ultimă generație,
+            oferind o interfață mult mai interactivă și foarte atractivă. Se
+            încadrează perfect pentru orice tip de eveniment datorită aspectului
+            elegant. Experiența utilizatorului este una deosebită prin
+            utilizarea touch-screen-ului direct pe suprafața oglinzii, prin
+            animațiile colorate dar şi prin realizarea fotografiilor de o
+            calitate superioara.
+          </p>
+          <p className="px-8 mb-5">
+            <b>Cutia</b> cu un design unic, realizată cu maxim de atenție din
+            placaj mesteacan acoperit cu PVC striat negru. Toate componentele
+            cabinei foto sunt atent asamblate în interiorul carcasei. Cutiile
+            sunt executate la standarde ridicate, toate componentele folosite
+            fiind importate din Germania.
+          </p>
+          <p className="px-8 mb-5">
+            <b>Geam oglinda two way Germania</b> cu grosimea de 6mm, securizat,
+            acesta oferind o claritate maximă de 100% și nu influentează
+            calitatea fotografiilor.
+          </p>
+        </div>
+        <div className="bg-white w-40v h-60v border-2 border-gold overflow-hidden">
+          <h1 className="bg-gold pl-8 py-2 ">FOTO</h1>
+          <div className="h-full w-full">
+            <img
+              className="w-full h-full"
+              src={require("../images/magic-mirror.jpg").default}
+              alt="photobooth"
+            />
+          </div>
+        </div>
+      </div>
       <div className="bg-black pb-2 px-6">
         <h1 className="text-gold text-5xl font-medium py-16 ">
           CABINA FOTO NUNTĂ
