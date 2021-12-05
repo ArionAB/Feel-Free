@@ -37,7 +37,7 @@ export const Contact = () => {
             Ne-ar face plăcere să vorbim cu tine!
           </h2>
           <h2 className="flex mt-3 text-2xl">Formular cerere ofertă</h2>
-          <form className="w-5/5 mr-24">
+          <form className="w-5/5 mr-24" onSubmit={handleSubmit}>
             <article className="flex">
               <article-left className="">
                 <label className="flex flex-col items-start mt-3 ">
@@ -46,6 +46,8 @@ export const Contact = () => {
                     className="w-96 p-2 mt-3 mb-3 "
                     type="text"
                     name="nume"
+                    value={nume}
+                    onChange={handleChange}
                     placeholder="Nume si prenume"
                   ></input>
                 </label>
@@ -55,6 +57,8 @@ export const Contact = () => {
                     className="w-96 p-2 mt-3 mb-3 "
                     type="email"
                     name="email"
+                    value={email}
+                    onChange={handleChange}
                     placeholder="Email"
                   ></input>
                 </label>
@@ -64,6 +68,8 @@ export const Contact = () => {
                     className="w-96 p-2 mt-3 mb-3 "
                     type="date"
                     name="data"
+                    value={data}
+                    onChange={handleChange}
                     placeholder="Alege data"
                   ></input>
                 </label>
@@ -73,6 +79,8 @@ export const Contact = () => {
                     className="w-96 p-2 mt-3 mb-3 "
                     type="text"
                     name="tip"
+                    value={tip}
+                    onChange={handleChange}
                     placeholder="eg: Nunta, Botez, etc"
                   ></input>
                 </label>
@@ -84,6 +92,8 @@ export const Contact = () => {
                     className="w-96 p-2 mt-3 mb-3 "
                     type="number"
                     name="telefon"
+                    value={number}
+                    onChange={handleChange}
                     placeholder="Telefon"
                   ></input>
                 </label>
@@ -93,6 +103,8 @@ export const Contact = () => {
                     className="w-96 p-2 mt-3 mb-3 "
                     type="text"
                     name="locatie"
+                    value={locatie}
+                    onChange={handleChange}
                     placeholder="Locatie"
                   ></input>
                 </label>
@@ -102,6 +114,8 @@ export const Contact = () => {
                     className="w-96 p-2 mt-3 mb-3 pb-3"
                     type="text"
                     name="ore"
+                    value={ore}
+                    onChange={handleChange}
                     placeholder="Numar de ore"
                   ></input>
                 </label>
@@ -111,6 +125,8 @@ export const Contact = () => {
                     className="w-96 p-2 mt-3 mb-3 "
                     type="text"
                     name="invitati"
+                    value={invitati}
+                    onChange={handleChange}
                     placeholder="Numar de invitati"
                   ></input>
                 </label>
@@ -119,8 +135,10 @@ export const Contact = () => {
             <label className="flex flex-col items-start text-xl">
               Mesajul tău
               <textarea
-                name="mesaj"
                 className="text-xl p-2 mt-3 mb-3 w-full h-28"
+                name="mesaj"
+                value={mesaj}
+                onChange={handleChange}
                 placeholder="Mesajul tau..."
               ></textarea>
             </label>
