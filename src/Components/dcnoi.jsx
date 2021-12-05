@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 function Dcnoi() {
   return (
-    <div className="bg-crowd2 bg-center p-8">
+    <div className="bg-crowd2 bg-center p-8 mt-8">
       <div className="mt-24">
         <div className="flex flex-col text-gold items-center">
           <h1 className="text-6xl font-bold mb-8">Serviciile noastre</h1>

@@ -1,10 +1,35 @@
 import React from "react";
+import { useState } from "react";
 
 import "../../index.css";
 
 export const Contact = () => {
+  const [contact, setContact] = useState({
+    nume: "",
+    email: "",
+    data: "",
+    tip: "",
+    number: "",
+    locatie: "",
+    ore: "",
+    invitati: "",
+    mesaj: "",
+  });
+
+  const { nume, email, data, tip, number, locatie, ore, invitati, mesaj } =
+    contact;
+
+  const handleChange = (e) => {
+    const { value, name } = e.target;
+    setContact({ ...contact, [name]: value });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+  };
+
   return (
-    <div className="flex-col font-bold text-gold bg-footer2 bg-no-repeat bg-cover bg-center pl-6">
+    <div className="flex-col font-bold text-gold bg-darkGrey bg-no-repeat bg-cover bg-center pl-6">
       <h1 className="flex text-6xl mt-12">CONTACT</h1>
       <div className="flex">
         <div className="flex-col">
@@ -94,6 +119,7 @@ export const Contact = () => {
             <label className="flex flex-col items-start text-xl">
               Mesajul tău
               <textarea
+                name="mesaj"
                 className="text-xl p-2 mt-3 mb-3 w-full h-28"
                 placeholder="Mesajul tau..."
               ></textarea>
@@ -168,5 +194,3 @@ export const Contact = () => {
     </div>
   );
 };
-// <article-right className="flex flex-col  items-start w-96 text-xl !ml-3">
-// <article-left className="flex flex-col items-start w-96 text-xl"></article-left>

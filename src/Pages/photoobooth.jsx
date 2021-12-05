@@ -46,7 +46,72 @@ export const Photobooth = () => {
           </div>
         </div>
       </div>
-      <div className="bg-black pb-2 px-6">
+      <div className="flex flex-row h-30v  mt-10 ">
+        <div className="flex flex-col border-2 border-gold bg-white">
+          <h1 className="bg-gold pl-8 py-2">Ecran</h1>
+          <p className="px-8 mb-5 text-justify py-5">
+            Touch IR multipunct de 65 inch de ultima generație. Ecranul este un
+            display LED full HD 108 cm. Imaginile arată mai bine datorită
+            culorilor și luminozității realiste.
+          </p>
+        </div>
+
+        <div className="flex flex-col h-30v ml-8 border-2 border-gold bg-white">
+          <h1 className="bg-gold pl-8 py-2">Aparat FOTO</h1>
+          <p className="px-8 mb-5 text-justify py-5">
+            Camera foto Nikon D3500 este o cameră foto profesională DSLR
+            însoțita de un obiectiv cu zoom. Camera foto realizează fotografii
+            de o calitate superioară.
+          </p>
+        </div>
+
+        <div className="flex flex-col h-30v ml-8 border-2 border-gold bg-white">
+          <h1 className="bg-gold pl-8 py-2">Blitz profesional studio</h1>
+          <p className="px-8 mb-5 text-justify py-5">
+            Folosim un blitz profesional care este alegerea ideală pentru o
+            cabină foto sigură și vine însoțit de umbrelă pentru ca lumina să
+            fie perfectă.
+          </p>
+        </div>
+      </div>
+      <div className="flex mt-8">
+        <div className="mr-8 bg-white text-justify w-40v h-60v overflow-hidden border-2 border-gold">
+          <h1 className="bg-gold pl-8 py-2">Foto</h1>
+          <div className="h-full w-full ">
+            <img
+              className="w-full h-full"
+              src={require("../images/magic-mirror2.jpg").default}
+              alt="photobooth"
+            ></img>
+          </div>
+        </div>
+        <div className=" bg-white text-justify w-40v h-60v border-2 border-gold">
+          <h1 className="bg-gold pl-8 py-2 mb-7">Informatii</h1>
+          <p className="px-8 mb-5">
+            <b>Ramă decorativă.</b>
+          </p>
+          <p className="px-8 mb-5">
+            <b>Soft profesional</b> cabină foto cu animații în limba română și
+            engleză care oferă posibilitatea semnării fotografiei, partajarea pe
+            rețelele de socializare, green screen, trimitere de sms-uri cu link
+            pentru descărcarea fotografiilor, QR code. Invitații pot să lase
+            mesaje video pentru sarbatoriți/miri/organizatori. Softul are
+            posibiliatea să realizeze gif-uri cu overlay (logo-ul
+            dumneavoastră). Puteți realiza template-uri pe loc simplu și rapid.
+            Semnatura fotografii.
+          </p>
+          <p className="px-8 mb-5">
+            <b>Imprimantă profesională</b> Mitsubishi D80 sau DNP DS-RX1
+            printează fotografii de cea mai bună calitate la dimensiunea 5×15
+            cm, 10×15 cm dar si 20×15 cm. Viteza de printare este redusă, mai
+            exact de doar 12 secunde pentru o fotografie. Fotografiile pot fi
+            customizate astfel încât pe o singură fotografie să fie afişate
+            între 1 şi 4 cadre, se pot seta sigle, logo-uri, mesaje text care să
+            apară pe fiecare fotografie în parte.
+          </p>
+        </div>
+      </div>
+      <div className="bg-darkGrey pb-2 px-6">
         <h1 className="text-gold text-5xl font-medium py-16 ">
           CABINA FOTO NUNTĂ
         </h1>
@@ -70,7 +135,7 @@ export const Photobooth = () => {
         </Link>
       </div>
       <CustomSlidePB />
-      <div className="bg-black pb-2 px-6">
+      <div className="bg-darkGrey pb-2 px-6">
         <h1 id="botez" className="text-gold text-5xl font-medium py-16 ">
           CABINA FOTO BOTEZ
         </h1>
@@ -92,7 +157,7 @@ export const Photobooth = () => {
         </Link>
       </div>
       <CustomSlidePB />
-      <div className="bg-black pb-2 px-6">
+      <div className="bg-darkGrey pb-2 px-6">
         <h1 id="aniversari" className="text-gold text-5xl font-medium py-16 ">
           CABINA FOTO ANIVERSĂRI
         </h1>
