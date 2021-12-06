@@ -1,10 +1,9 @@
 import React from "react";
 import Slider from "react-slick";
 
-import potato01 from "../images/potato01.jpeg";
-import potato02 from "../images/potato02.jpeg";
-import potato03 from "../images/potato03.jpeg";
-import potato04 from "../images/potato04.jpeg";
+import arc01 from "../images/arc01.jpg";
+import arc02 from "../images/arc02.jpg";
+import arc03 from "../images/arc03.jpg";
 
 export const CustomSlidePB = () => {
   const settings = {
@@ -12,7 +11,7 @@ export const CustomSlidePB = () => {
       return (
         <a>
           <img
-            src={require(`../images/potato0${i + 1}.jpeg`).default}
+            src={require(`../images/arc0${i + 1}.jpg`).default}
             alt="sound"
           ></img>
         </a>
@@ -29,16 +28,13 @@ export const CustomSlidePB = () => {
     <div className="mb-36">
       <Slider {...settings}>
         <div>
-          <img src={potato01} className=" w-80v h-60v " />
+          <img src={arc01} className=" w-80v h-60v " />
         </div>
         <div>
-          <img src={potato02} className=" w-80v h-60v " />
+          <img src={arc02} className=" w-80v h-60v " />
         </div>
         <div>
-          <img src={potato03} className=" w-80v h-60v " />
-        </div>
-        <div>
-          <img src={potato04} className=" w-80v h-60v " />
+          <img src={arc03} className=" w-80v h-60v " />
         </div>
       </Slider>
     </div>

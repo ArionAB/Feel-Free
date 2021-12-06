@@ -22,7 +22,7 @@ const arrow = (
 const Sonorizare = () => {
   return (
     <>
-      <div className="bg-darkGrey h-20 flex justify-center items-center text-white text-xl ">
+      <div className="bg-darkGrey h-20 flex justify-center items-center text-white text-xl border-t-2 border-gold ">
         <p>
           Sonorizari evenimente si inchirieri sisteme audio pentru sonorizari
           evenimente de orice gen – prezentari, conferinte, nunti, botezuri,
@@ -210,6 +210,49 @@ const Sonorizare = () => {
             src={require("../images/ld-systems.jpg").default}
             alt="Boxe Bose"
           ></img>
+        </div>
+      </div>
+      <div className="flex mt-8">
+        <div className="bg-white w-40v h-70v overflow-hidden gold-border">
+          <h1 className="bg-gold py-2 px-4 mb-8">Pioneer DJ HDJ-X10</h1>
+          <img
+            className=""
+            src={require("../images/pioneer-dj-casti.jpg").default}
+            alt="Boxe Bose"
+          ></img>
+        </div>
+
+        <div className="bg-white w-40v h-70v ml-8 overflow-hidden gold-border">
+          <h1 className="bg-gold py-2 px-8 mb-4">Specificatii Tehnice</h1>
+          <p className="px-8 text-justify mb-4">
+            <b>HDJ-X10 - </b> căști profesionale de monitorizare DJ, dinamice,
+            echipate cu drivere de 50mm ce oferă un sunet audio de o foarte
+            înaltă calitate și permit o monitorizare clară chiar și la volum
+            ridicat. Beneficiază de cablu detașabil, ce are o structură gândită
+            în așa fel încât separarea canalelor să fie la nivel superior. Se
+            livrează cu un cablu spiralat de 1.2m și un cablu drept 1.6m. Cupele
+            sunt rotative și pliabile, și permit monitorizare cu o singură cască
+            și un transport și depozitare ușoare. Includ adaptor la jack stereo
+            6.3 mm și husă pentru transport.
+          </p>
+
+          <ul className="px-8">
+            <li className="flex bg-lightGrey">
+              {arrow}Diametru drivere: 50 mm
+            </li>
+            <li className="flex">{arrow}Gama de frecvențe: 5 - 40,000 Hz</li>
+            <li className="flex bg-lightGrey">
+              {arrow}Putere de intrare maxima: 3500 mW
+            </li>
+            <li className="flex">{arrow}SPL: 106 dB</li>
+            <li className="flex bg-lightGrey">{arrow}Impedanța: 32 Ω</li>
+            <li className="flex ">
+              {arrow}Cablu: spiralat 1.2m și drept 1.6m, detașabil cu mini XLR
+            </li>
+            <li className="flex bg-lightGrey">
+              {arrow}Conector: jack TRS 3.5mm
+            </li>
+          </ul>
         </div>
       </div>
     </>
