@@ -39,6 +39,7 @@ module.exports = {
           "bg-gradient-to-b from-black via-gray-900 to-gray-500": "",
         },
         darkGrey: "#1c1c1c",
+        lightGrey: "#efeef1",
       },
       height: {
         "10v": "10vh",

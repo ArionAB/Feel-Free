@@ -12,6 +12,9 @@
   .icon-text {
     @apply text-gold  text-4xl font-medium px-4 mt-8;
   }
+  .gold-border {
+    @apply border-2 border-gold;
+  }
 }
 
 @tailwind utilities;

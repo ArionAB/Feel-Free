@@ -7,7 +7,7 @@ export const Photobooth = () => {
   return (
     <div>
       <div className=" overflow-hidden pb-96 relative h-0">
-        <YoutubeEmbed embedId="tKSsJeCzV3Y" />
+        <YoutubeEmbed embedId="tKSsJeCzV3Y?autoplay=1" />
       </div>
 
       <div className="flex">
