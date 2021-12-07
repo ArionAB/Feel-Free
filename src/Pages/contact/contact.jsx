@@ -1,6 +1,7 @@
 import React from "react";
 import clsx from "clsx";
-import { useState } from "react";
+import emailjs, { send } from "emailjs-com";
+import { useState, useRef } from "react";
 
 import "../../index.css";
 
@@ -40,6 +41,27 @@ export const Contact = () => {
     setErrors(newErrors);
   };
 
+  const form = useRef();
+  function sendEmail() {
+    emailjs
+      .sendForm(
+        "service_p9wp0in",
+        "template_gy0awri",
+        form.current,
+        "user_LtmtuFMqwYiemrPoY0qJc"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+    setContact("");
+    form.current.reset();
+  }
+
   const handleSubmit = (e) => {
     e.preventDefault();
 
@@ -56,14 +78,14 @@ export const Contact = () => {
       newErrors.email = "Adresa trebuie sa contina '@'";
     }
 
-    if (email && email.includes("@") && !email.includes(".com" || ".ro")) {
+    if (email && email.includes("@") && !email.includes(".")) {
       hasErrors = true;
-      newErrors.email = "Adresa trebuie sa contina '.com' sau '.ro'";
+      newErrors.email = "Adresa trebuie sa contina '.'";
     }
 
-    if (nume.length < 3) {
+    if (!nume) {
       hasErrors = true;
-      newErrors.nume = "Numele trebuie sa contina minim 3 caractere";
+      newErrors.nume = "Adauga numele";
     }
 
     if (!data) {
@@ -97,7 +119,8 @@ export const Contact = () => {
     if (hasErrors) {
       setErrors(newErrors);
       return;
-    }
+    } else console.log("aa");
+    sendEmail();
   };
 
   return (
@@ -109,7 +132,12 @@ export const Contact = () => {
             Ne-ar face plăcere să vorbim cu tine!
           </h2>
           <h2 className="flex mt-3 text-2xl">Formular cerere ofertă</h2>
-          <form className="w-5/5 mr-24" onSubmit={handleSubmit} noValidate>
+          <form
+            ref={form}
+            className="w-5/5 mr-24"
+            onSubmit={handleSubmit}
+            noValidate
+          >
             <article className="flex">
               <article-left className="">
                 <label className="flex flex-col items-start mt-3 ">
@@ -235,8 +263,9 @@ export const Contact = () => {
                 placeholder="Mesajul tau..."
               ></textarea>
             </label>
+
             <button
-              className="flex justify-center bg-gold  hover:bg-black  hover:text-gold text-black font-bold py-2 px-4 my-8 rounded-full w-1/4"
+              className="flex justify-center  bg-gold  hover:bg-black  hover:text-gold text-black font-bold py-2 px-4 my-8 rounded-full w-1/4"
               type="submit"
             >
               Trimite
