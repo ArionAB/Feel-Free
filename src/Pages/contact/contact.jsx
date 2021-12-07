@@ -1,10 +1,22 @@
 import React from "react";
+import clsx from "clsx";
 import { useState } from "react";
 
 import "../../index.css";
 
 export const Contact = () => {
   const [contact, setContact] = useState({
+    nume: "",
+    email: "",
+    data: "",
+    tip: "",
+    number: "",
+    locatie: "",
+    ore: "",
+    invitati: "",
+    mesaj: "",
+  });
+  const [errors, setErrors] = useState({
     nume: "",
     email: "",
     data: "",
@@ -22,10 +34,70 @@ export const Contact = () => {
   const handleChange = (e) => {
     const { value, name } = e.target;
     setContact({ ...contact, [name]: value });
+
+    const newErrors = { ...errors };
+    newErrors[name] = "";
+    setErrors(newErrors);
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
+
+    let hasErrors = false;
+    let newErrors = { ...errors };
+
+    if (!email) {
+      hasErrors = true;
+      newErrors.email = "Adauga adresa de email";
+    }
+
+    if (email && !email.includes("@")) {
+      hasErrors = true;
+      newErrors.email = "Adresa trebuie sa contina '@'";
+    }
+
+    if (email && email.includes("@") && !email.includes(".com" || ".ro")) {
+      hasErrors = true;
+      newErrors.email = "Adresa trebuie sa contina '.com' sau '.ro'";
+    }
+
+    if (nume.length < 3) {
+      hasErrors = true;
+      newErrors.nume = "Numele trebuie sa contina minim 3 caractere";
+    }
+
+    if (!data) {
+      hasErrors = true;
+      newErrors.data = "Adauga data evenimentului";
+    }
+    if (!tip) {
+      hasErrors = true;
+      newErrors.tip = "Adauga tipul evenimentului";
+    }
+
+    if (!number) {
+      hasErrors = true;
+      newErrors.number = "Adauga numarul de telefon";
+    }
+    if (number && number.length < 10) {
+      hasErrors = true;
+      newErrors.number = "Trebuie sa contina 10 cifre";
+    }
+
+    if (!locatie) {
+      hasErrors = true;
+      newErrors.locatie = "Adauga locatia";
+    }
+
+    if (!ore) {
+      hasErrors = true;
+      newErrors.ore = "Adauga numarul de ore";
+    }
+
+    if (hasErrors) {
+      setErrors(newErrors);
+      return;
+    }
   };
 
   return (
@@ -37,87 +109,108 @@ export const Contact = () => {
             Ne-ar face plăcere să vorbim cu tine!
           </h2>
           <h2 className="flex mt-3 text-2xl">Formular cerere ofertă</h2>
-          <form className="w-5/5 mr-24" onSubmit={handleSubmit}>
+          <form className="w-5/5 mr-24" onSubmit={handleSubmit} noValidate>
             <article className="flex">
               <article-left className="">
                 <label className="flex flex-col items-start mt-3 ">
                   Nume:
                   <input
-                    className="w-96 p-2 mt-3 mb-3 "
+                    className={clsx("w-96 p-2 mt-3 mb-3 ", {
+                      "border-2 border-red-500": errors.nume,
+                    })}
                     type="text"
                     name="nume"
                     value={nume}
                     onChange={handleChange}
-                    placeholder="Nume si prenume"
+                    placeholder="Nume"
                   ></input>
+                  <p className="text-red-500">{errors.nume}</p>
                 </label>
                 <label className="flex flex-col items-start">
                   Email:
                   <input
-                    className="w-96 p-2 mt-3 mb-3 "
+                    className={clsx("w-96 p-2 mt-3 mb-3 ", {
+                      "border-2 border-red-500": errors.email,
+                    })}
                     type="email"
                     name="email"
                     value={email}
                     onChange={handleChange}
                     placeholder="Email"
                   ></input>
+                  <p className="text-red-500">{errors.email}</p>
                 </label>
                 <label className="flex flex-col items-start">
                   Data evenimentului:
                   <input
-                    className="w-96 p-2 mt-3 mb-3 "
+                    className={clsx("w-96 p-2 mt-3 mb-3 ", {
+                      "border-2 border-red-500": errors.data,
+                    })}
                     type="date"
                     name="data"
                     value={data}
                     onChange={handleChange}
                     placeholder="Alege data"
                   ></input>
+                  <p className="text-red-500">{errors.data}</p>
                 </label>
                 <label className="flex flex-col items-start">
                   Tip eveniment:
                   <input
-                    className="w-96 p-2 mt-3 mb-3 "
+                    className={clsx("w-96 p-2 mt-3 mb-3 ", {
+                      "border-2 border-red-500": errors.tip,
+                    })}
                     type="text"
                     name="tip"
                     value={tip}
                     onChange={handleChange}
                     placeholder="eg: Nunta, Botez, etc"
                   ></input>
+                  <p className="text-red-500">{errors.tip}</p>
                 </label>
               </article-left>
               <article-right className="">
                 <label className="flex flex-col items-start mt-3 ">
                   Telefon:
                   <input
-                    className="w-96 p-2 mt-3 mb-3 "
+                    className={clsx("w-96 p-2 mt-3 mb-3 ", {
+                      "border-2 border-red-500": errors.number,
+                    })}
                     type="number"
-                    name="telefon"
+                    name="number"
                     value={number}
                     onChange={handleChange}
                     placeholder="Telefon"
                   ></input>
+                  <p className="text-red-500">{errors.number}</p>
                 </label>
                 <label className="flex flex-col items-start">
                   Locație:
                   <input
-                    className="w-96 p-2 mt-3 mb-3 "
+                    className={clsx("w-96 p-2 mt-3 mb-3 ", {
+                      "border-2 border-red-500": errors.locatie,
+                    })}
                     type="text"
                     name="locatie"
                     value={locatie}
                     onChange={handleChange}
                     placeholder="Locatie"
                   ></input>
+                  <p className="text-red-500">{errors.locatie}</p>
                 </label>
                 <label className="flex flex-col items-start">
                   Număr de ore:
                   <input
-                    className="w-96 p-2 mt-3 mb-3 pb-3"
+                    className={clsx("w-96 p-2 mt-3 mb-3 ", {
+                      "border-2 border-red-500": errors.ore,
+                    })}
                     type="text"
                     name="ore"
                     value={ore}
                     onChange={handleChange}
                     placeholder="Numar de ore"
                   ></input>
+                  <p className="text-red-500">{errors.ore}</p>
                 </label>
                 <label className="flex flex-col items-start">
                   Număr invitați:
@@ -188,27 +281,25 @@ export const Contact = () => {
               </svg>
               marian.raul@yahoo.com
             </p>
-            <div className="flex">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-6 w-6 mr-2"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
-                />
-              </svg>
-
-              <p>Luni-Vineri 9:00-18:00</p>
-            </div>
           </div>
         </div>
       </div>
     </div>
   );
 };
+
+/* {nume.length < 3 ? (
+  <p className="text-red-600">
+    Name must be at least 3 characters
+  </p>
+) : (
+  ""
+)} */
+
+/* {number.length < 10 ? (
+  <p className="text-red-600">
+    Telefonul trebuie sa contina 10 cifre
+  </p>
+) : (
+  ""
+)} */

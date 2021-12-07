@@ -23,6 +23,7 @@ function App() {
         <Route path="/photobooth" element={<Photobooth />} />
         <Route path="/accesorii" element={<Accesorii />} />
         <Route path="/" element={<Home />} />
+        <Route path="*" element={() => <h1>404 Page not Found</h1>} />
       </Routes>
       <Footer />
     </div>
