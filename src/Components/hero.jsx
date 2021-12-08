@@ -39,7 +39,7 @@ function Hero() {
     dots: false,
     fade: true,
     infinite: true,
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 3000,
     cssEase: "linear",
     speed: 500,
@@ -54,7 +54,7 @@ function Hero() {
       <div>
         <Slider {...settings}>
           <div className="h-70v flex flex-col justify-center bg-center relative">
-            <div className="absolute top-1/3 right-1/4">
+            <div className="absolute xl:top-1/3 xl:right-1/4 sm:top-1/3 sm:left-1/4 sm:right-1/4 top-1/4 left-1/5">
               <h1 className=" text-6xl flex justify-end text-gold pb-8 font-semibold mb-16 ">
                 SONORIZARI EVENIMENTE
               </h1>
@@ -65,7 +65,7 @@ function Hero() {
             <img src={crowd} className="h-70v w-80v" />
           </div>
           <div className="h-70v flex flex-col justify-center bg-center relative">
-            <div className="absolute top-1/3 right-2/4">
+            <div className="absolute xl:top-1/3 xl:right-1/4 sm:top-1/3 sm:left-1/4 sm:right-1/4 top-1/4 left-1/5">
               <h1 className=" text-6xl flex justify-center text-pink pb-8 font-semibold ">
                 PHOTOBOOTH
               </h1>
