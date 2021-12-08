@@ -91,7 +91,7 @@ function Footer() {
         <img
           src={require("../images/logo.png").default}
           alt="Logo"
-          className="h-40v w-60"
+          className="hidden lg:h-40v lg:w-60"
         ></img>
         <div className="mt-12 flex flex-col text-dblue">
           <h2 className=" ml-8 text-dblue font-medium text-2xl">
