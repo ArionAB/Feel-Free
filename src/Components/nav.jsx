@@ -59,7 +59,7 @@ export const Nav = () => {
           HOME
         </Link>
         <div
-          className="flex overflow-hidden float-left"
+          className=" flex overflow-hidden float-left"
           onMouseEnter={() => setShow(!show)}
           onMouseLeave={() => setShow(!show)}
         >

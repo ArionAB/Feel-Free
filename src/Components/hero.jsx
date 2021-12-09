@@ -53,24 +53,24 @@ function Hero() {
     <>
       <div>
         <Slider {...settings}>
-          <div className="h-70v flex flex-col justify-center bg-center relative">
+          <div className="relative flex flex-col justify-center bg-center h-70v">
             <div className="absolute xl:top-1/3 xl:right-1/4 sm:top-1/3 sm:left-1/4 sm:right-1/4 top-1/4 left-1/5">
-              <h1 className=" text-6xl flex justify-end text-gold pb-8 font-semibold mb-16 ">
+              <h1 className="flex justify-end pb-8 mb-16 ml-12 text-4xl font-semibold lg:ml-0 lg:text-6xl text-gold">
                 SONORIZARI EVENIMENTE
               </h1>
-              <h3 className="text-3xl text-white font-medium absolute text-center">
+              <h3 className="absolute text-3xl font-medium text-center text-white">
                 ECHIPAMENTE SONORIZARE, ECHIPAMENTE DE LUMINI SI EFECTE SPECIALE
               </h3>
             </div>
-            <img src={crowd} className="h-70v w-80v" />
+            <img src={crowd} className="h-70v w-80v" alt="photobooth" />
           </div>
-          <div className="h-70v flex flex-col justify-center bg-center relative">
+          <div className="relative flex flex-col justify-center bg-center h-70v">
             <div className="absolute xl:top-1/3 xl:right-1/4 sm:top-1/3 sm:left-1/4 sm:right-1/4 top-1/4 left-1/5">
-              <h1 className=" text-6xl flex justify-center text-pink pb-8 font-semibold ">
+              <h1 className="flex justify-center pb-8 text-6xl font-semibold text-pink">
                 PHOTOBOOTH
               </h1>
             </div>
-            <img src={photobooth2} className="h-70v w-80v" />
+            <img src={photobooth2} className="h-70v w-80v" alt="photobooth" />
           </div>
         </Slider>
       </div>

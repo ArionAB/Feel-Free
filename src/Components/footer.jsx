@@ -3,16 +3,16 @@ import { Link } from "react-router-dom";
 
 function Footer() {
   return (
-    <div className="mt-24 bg-footer h-40v w-80v">
-      <div className="flex justify-evenly">
-        <div className="mt-12 flex flex-col">
-          <h2 className=" ml-8 text-dblue font-medium text-2xl">HARTA SITE</h2>
-          <ul className="text-dblue text-xl">
+    <div className="mt-24 bg-cover bg-footer sm:h-40v w-80v">
+      <div className="flex flex-col sm:flex-row sm:justify-evenly">
+        <div className="flex flex-col items-center mt-12 ">
+          <h2 className="ml-8 text-2xl font-medium text-dblue">HARTA SITE</h2>
+          <ul className="text-xl text-dblue">
             <Link to="/photobooth">
               <li className="flex mt-6 hover:text-purple-400">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="h-6 w-6 mr-3"
+                  className="w-6 h-6 mr-3"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -31,7 +31,7 @@ function Footer() {
               <li className="flex mt-3 hover:text-purple-400 ">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="h-6 w-6 mr-3"
+                  className="w-6 h-6 mr-3"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -51,7 +51,7 @@ function Footer() {
                 {" "}
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="h-6 w-6 mr-3"
+                  className="w-6 h-6 mr-3"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -71,7 +71,7 @@ function Footer() {
                 {" "}
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="h-6 w-6 mr-3"
+                  className="w-6 h-6 mr-3"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -88,19 +88,21 @@ function Footer() {
             </Link>
           </ul>
         </div>
-        <img
-          src={require("../images/logo.png").default}
-          alt="Logo"
-          className="hidden lg:h-40v lg:w-60"
-        ></img>
-        <div className="mt-12 flex flex-col text-dblue">
-          <h2 className=" ml-8 text-dblue font-medium text-2xl">
+        <Link to="/">
+          <img
+            src={require("../images/logo.png").default}
+            alt="Logo"
+            className="hidden lg:block lg:h-40v lg:w-60"
+          ></img>
+        </Link>
+        <div className="flex flex-col items-center mt-12 sm:items-baseline text-dblue">
+          <h2 className="ml-8 text-2xl font-medium text-dblue">
             CONTACTEAZA-NE
           </h2>
-          <p className="flex mt-6 text-dblue text-xl hover:text-purple-400">
+          <p className="flex mt-6 text-xl text-dblue hover:text-purple-400">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="h-6 w-6 mr-3 "
+              className="w-6 h-6 mr-3 "
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
@@ -114,10 +116,10 @@ function Footer() {
             </svg>
             07522248261
           </p>
-          <p className="flex mt-6 text-dblue text-xl hover:text-purple-400">
+          <p className="flex mt-6 text-xl text-dblue hover:text-purple-400">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="h-6 w-6 mr-3"
+              className="w-6 h-6 mr-3"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
@@ -133,7 +135,7 @@ function Footer() {
           </p>
           <Link
             to="/contact"
-            className="flex mt-6 ml-9 text-dblue text-xl hover:text-purple-400"
+            className="flex mt-6 text-xl ml-9 text-dblue hover:text-purple-400 "
           >
             Formular Contact
           </Link>

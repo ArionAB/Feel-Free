@@ -1,3 +1,9 @@
+@media only screen and (max-width: 768px) {
+  body {
+    margin: 0;
+  }
+}
+
 body {
   margin: 0 10%;
   background-image: url(./images/body.jpeg);
