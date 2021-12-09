@@ -2,8 +2,11 @@ import React from "react";
 import clsx from "clsx";
 import emailjs, { send } from "emailjs-com";
 import { useState, useRef } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faInstagram } from "@fortawesome/free-brands-svg-icons";
 
 import "../../index.css";
+const instagram = <FontAwesomeIcon icon={faInstagram} />;
 
 export const Contact = () => {
   const [contact, setContact] = useState({
@@ -126,7 +129,7 @@ export const Contact = () => {
 
   return (
     <div className="flex-col pl-6 font-bold bg-center bg-no-repeat bg-cover text-gold bg-darkGrey w-80v">
-      <h1 className="flex mt-12 text-6xl">CONTACT</h1>
+      <h1 className="flex mt-12 text-6xl"> CONTACT</h1>
       <div className="flex flex-col xl:flex-row">
         <div className="flex-col">
           <h2 className="flex mt-12 text-3xl">
@@ -311,6 +314,12 @@ export const Contact = () => {
               </svg>
               marian.raul@yahoo.com
             </p>
+            <a
+              href="https://www.instagram.com/feelfree__events/"
+              className="flex"
+            >
+              <p className="w-6 h-6 mr-2">{instagram}</p>Follow us on instagram
+            </a>
           </div>
         </div>
       </div>

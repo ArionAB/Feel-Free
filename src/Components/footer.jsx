@@ -1,5 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { faInstagram } from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
+const instagram = <FontAwesomeIcon icon={faInstagram} />;
 
 function Footer() {
   return (
@@ -89,6 +93,7 @@ function Footer() {
           </ul>
         </div>
         <Link to="/">
+          {" "}
           <img
             src={require("../images/logo.png").default}
             alt="Logo"
@@ -119,7 +124,7 @@ function Footer() {
           <p className="flex mt-6 text-xl text-dblue hover:text-purple-400">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="w-6 h-6 mr-3"
+              className="w-6 h-6 mr-2"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
@@ -127,12 +132,18 @@ function Footer() {
               <path
                 strokeLinecap="round"
                 strokeLinejoin="round"
-                strokeWidth="2"
-                d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                strokeWidth={2}
+                d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
               />
             </svg>
-            Luni-Vineri 9:00-18:00
+            marian.raul@yahoo.com
           </p>
+          <a
+            href="https://www.instagram.com/feelfree__events/"
+            className="flex mt-6 text-xl text-dblue hover:text-purple-400"
+          >
+            <p className="w-6 h-6 mr-2">{instagram}</p>Follow us on instagram
+          </a>
           <Link
             to="/contact"
             className="flex mt-6 text-xl ml-9 text-dblue hover:text-purple-400 "

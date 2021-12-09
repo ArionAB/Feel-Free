@@ -24,11 +24,19 @@ export const Nav = () => {
       />
     </svg>
   );
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
   return (
-    <div className="sticky top-0 z-50 flex items-center justify-between bg-darkGrey ">
-      <Link to="/" className="w-40 h-40">
+    <div className="sticky top-0 z-50 flex items-center justify-between border-b-4 h-10v bg-darkGrey border-gold">
+      <Link to="/" onClick={scrollToTop} className="">
         <img
-          className="lg:h-full lg"
+          // className="lg:h-full lg"
+          className="w-20 "
           src={require("../images/logo.png").default}
           alt="Feel Free Events Logo"
         ></img>
@@ -49,6 +57,7 @@ export const Nav = () => {
       >
         <Link
           to="/"
+          onClick={scrollToTop}
           className="order-2 home md:order-none "
         >
           <span></span>
@@ -62,7 +71,7 @@ export const Nav = () => {
           onMouseEnter={() => setShow(!show)}
           onMouseLeave={() => setShow(!show)}
         >
-          <Link to="/photobooth" className="flex home ">
+          <Link to="/photobooth" onClick={scrollToTop} className="flex home ">
             <span></span>
             <span></span>
             <span></span>
@@ -85,20 +94,20 @@ export const Nav = () => {
           </Link>
           {show ? (
             <div className="absolute z-10 block w-40 mt-6 bg-white rounded-lg shadow-xl ">
-              <Link
-                to="/photobooth"
-                className="block float-none px-4 py-4 text-left text-black  hover:text-gold hover:bg-black"
+              <a
+                href="/photobooth#nunta"
+                className="block float-none px-4 py-4 text-left text-black hover:text-gold hover:bg-black"
               >
                 Nunti
-              </Link>
+              </a>
               <a
-                href="#botez"
+                href="/photobooth#botez"
                 className="block float-none px-4 py-4 text-left text-black hover:text-gold hover:bg-black"
               >
                 Botez
               </a>
               <a
-                href="#aniversari"
+                href="/photobooth#aniversari"
                 className="block float-none px-4 py-4 text-left text-black hover:text-gold hover:bg-black"
               >
                 Aniversari
@@ -113,21 +122,21 @@ export const Nav = () => {
           ) : null}
         </div>
 
-        <Link to="/scenotehnica" className="home">
+        <Link to="/scenotehnica" onClick={scrollToTop} className="home">
           <span></span>
           <span></span>
           <span></span>
           <span></span>
           SCENOTEHNICA
         </Link>
-        <Link to="/sonorizare" className="home">
+        <Link to="/sonorizare" onClick={scrollToTop} className="home">
           <span></span>
           <span></span>
           <span></span>
           <span></span>
           SONORIZARE
         </Link>
-        <Link to="/contact" className="home">
+        <Link to="/contact" onClick={scrollToTop} className="home">
           <span></span>
           <span></span>
           <span></span>

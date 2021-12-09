@@ -7,7 +7,7 @@ export const Photobooth = () => {
   return (
     <div>
       <div className="relative h-0 overflow-hidden pb-96">
-        <YoutubeEmbed embedId="tKSsJeCzV3Y?autoplay=1" />
+        <YoutubeEmbed embedId="tKSsJeCzV3Y?" />
       </div>
 
       <div className="flex flex-col lg:flex-row">
@@ -112,7 +112,7 @@ export const Photobooth = () => {
         </div>
       </div>
       <div className="px-6 pb-2 bg-darkGrey">
-        <h1 className="py-16 text-5xl font-medium text-gold ">
+        <h1 id="nunta" className="py-16 text-5xl font-medium text-gold ">
           CABINA FOTO NUNTĂ
         </h1>
         <p className="pr-6 text-justify text-white">
@@ -135,8 +135,8 @@ export const Photobooth = () => {
         </Link>
       </div>
       <CustomSlidePB />
-      <div className="px-6 pb-2 bg-darkGrey">
-        <h1 id="botez" className="py-16 text-5xl font-medium text-gold ">
+      <div id="botez" className="px-6 pb-2 bg-darkGrey">
+        <h1 className="py-16 text-5xl font-medium text-gold ">
           CABINA FOTO BOTEZ
         </h1>
         <p className="pr-6 text-justify text-white">

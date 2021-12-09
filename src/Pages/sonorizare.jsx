@@ -20,7 +20,7 @@ const arrow = (
 const Sonorizare = () => {
   return (
     <>
-      <div className="flex items-center justify-center h-20 py-20 text-xl text-white border-t-2 md:py-0 bg-darkGrey border-gold ">
+      <div className="flex items-center justify-center h-20 py-20 text-xl text-white md:py-0 bg-darkGrey ">
         <p>
           Sonorizari evenimente si inchirieri sisteme audio pentru sonorizari
           evenimente de orice gen – prezentari, conferinte, nunti, botezuri,

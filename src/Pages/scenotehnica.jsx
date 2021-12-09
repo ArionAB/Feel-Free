@@ -39,7 +39,7 @@ const Scenotehnica = () => {
   );
   return (
     <div className="h-full bg-cover bg-darkGrey ">
-      <h1 className="flex justify-center pt-8 mb-12 text-2xl text-white border-t-2 sm:text-6xl border-gold">
+      <h1 className="flex justify-center pt-8 mb-12 text-2xl text-white sm:text-6xl ">
         Servicii sceno-tehnice
       </h1>
       <div className="flex flex-col md:flex-row">
@@ -51,7 +51,7 @@ const Scenotehnica = () => {
             alt="Boxe Bose"
           ></img>
         </div>
-        <div className="overflow-scroll bg-white md:ml-8 md:w-40v h-60v gold-border">
+        <div className="overflow-scroll bg-white xl:overflow-hidden md:ml-8 md:w-40v h-60v gold-border">
           <h1 className="px-8 py-2 mb-4 bg-gold">Specificatii Tehnice</h1>
           <p className="px-8 mb-4 text-justify">
             <b>Cameo Hydrabeam 400 RGBW </b>- sistem de lumini compus din 4
@@ -124,7 +124,7 @@ const Scenotehnica = () => {
             alt="Boxe Bose"
           ></img>
         </div>
-        <div className="overflow-scroll bg-white md:ml-8 md:w-40v h-60v gold-border">
+        <div className="overflow-scroll bg-white xl:overflow-hidden md:ml-8 md:w-40v h-60v gold-border">
           <h1 className="px-8 py-2 mb-4 bg-gold">Specificatii Tehnice</h1>
           <p className="px-8 mb-4 text-justify">
             <b>Cameo WOOKIE 400 RGB </b>- efect de lumini laser ce oferă
@@ -215,7 +215,7 @@ const Scenotehnica = () => {
             alt="Boxe Bose"
           ></img>
         </div>
-        <div className="overflow-scroll bg-white md:ml-8 md:w-40v h-60v gold-border">
+        <div className="overflow-scroll bg-white xl:overflow-hidden md:ml-8 md:w-40v h-60v gold-border">
           <h1 className="px-8 py-2 mb-4 bg-gold">Specificatii Tehnice</h1>
           <p className="px-8 mb-4 text-justify">
             <b>Cameo Root PAR 4 </b>- Soluția optimă pentru efecte de iluminare

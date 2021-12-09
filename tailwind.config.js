@@ -22,6 +22,7 @@ module.exports = {
         sceno3: "url('./images/scenoBG3.jpeg')",
         pbCover: "url('./images/pb-coverBW.jpg')",
         accesorii: "url('./images/Fraps.lnk.jpg')",
+        moon: "url('./images/Feel_free_events_final_AI-02.png')",
       },
       gradientColorStops: (theme) => ({
         primary: "#303030",
@@ -39,6 +40,7 @@ module.exports = {
           "bg-gradient-to-b from-black via-gray-900 to-gray-500": "",
         },
         darkGrey: "#1c1c1c",
+        // darkGrey: "#1c1c1c",
         lightGrey: "#efeef1",
       },
       height: {

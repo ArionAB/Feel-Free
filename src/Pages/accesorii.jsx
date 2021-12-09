@@ -5,12 +5,12 @@ import { PropsSlide } from "../Components/props-slide";
 
 const Accesorii = () => {
   return (
-    <div>
-      <div className="bg-accesorii w-80v h-80v  bg-center bg-cover bg-no-repeat border-b-8 border-gold"></div>
+    <div className="overflow-hidden">
+      <div className="bg-center bg-no-repeat bg-cover border-b-8 bg-accesorii w-80v h-80v border-gold"></div>
       <div className="flex ">
-        <article className="text-white w-40v bg-gradient-to-b from-black via-third to-black bg-opacity-100">
-          <h1 className="text-gold text-3xl p-8">DESIGN & PERSONALIZARE</h1>
-          <p className="text-justify px-8">
+        <article className="text-white bg-opacity-100 w-40v bg-darkGrey">
+          <h1 className="p-8 text-3xl text-gold">DESIGN & PERSONALIZARE</h1>
+          <p className="px-8 text-justify">
             Personalizate cu textele și culorile voastre și potrivite cu
             fundalurile de fotografiere, poți alege între formatele tip
             photostrip (5*15 cm), fotografie landscape (15*10 cm) sau fotografie
@@ -24,17 +24,17 @@ const Accesorii = () => {
             putem face împreună un concept nou pentru modelele fotografiilor!
           </p>
         </article>
-        <div className="w-40v">
+        <div className="overflow-hidden w-40v">
           <AccSlide />
         </div>
       </div>
       <div className="flex ">
-        <div className="w-40v">
+        <div className="overflow-hidden w-40v">
           <PropsSlide />
         </div>
-        <article className="text-white w-40v bg-gradient-to-b from-black via-third to-black bg-opacity-100">
-          <h1 className="text-gold text-3xl p-8">ACCESORII ȘI PROPSURI</h1>
-          <p className="text-justify px-8">
+        <article className="text-white bg-opacity-100 bg-darkGrey w-40v">
+          <h1 className="p-8 text-3xl text-gold">ACCESORII ȘI PROPSURI</h1>
+          <p className="px-8 text-justify">
             Fiecare pachet de petrecere vine cu accesorii de party sau adaptate
             ocaziei evenimentului, cum este cazul în celor de nuntă sau de
             botez. Sunt accesorii de calitate premium, buze și mustăți
