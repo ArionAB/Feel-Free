@@ -11,7 +11,7 @@ export const Nav = () => {
   const hamburger = (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      className="h-14 w-14 mr-4 text-white"
+      className="mr-4 text-white h-14 w-14"
       fill="none"
       viewBox="0 0 24 24"
       stroke="currentColor"
@@ -25,8 +25,8 @@ export const Nav = () => {
     </svg>
   );
   return (
-    <div className="flex justify-between items-center   bg-darkGrey ">
-      <Link to="/" className="h-40 w-40">
+    <div className="sticky top-0 z-50 flex items-center justify-between bg-darkGrey ">
+      <Link to="/" className="w-40 h-40">
         <img
           className="lg:h-full lg"
           src={require("../images/logo.png").default}
@@ -34,7 +34,7 @@ export const Nav = () => {
         ></img>
       </Link>
       <button
-        className="block lg:hidden order-1"
+        className="order-1 block lg:hidden"
         onClick={() => setNabarOpen(!navbarOpen)}
       >
         {hamburger}
@@ -49,8 +49,7 @@ export const Nav = () => {
       >
         <Link
           to="/"
-          className="home order-2 md:order-none
-        "
+          className="order-2 home md:order-none "
         >
           <span></span>
           <span></span>
@@ -59,11 +58,11 @@ export const Nav = () => {
           HOME
         </Link>
         <div
-          className=" flex overflow-hidden float-left"
+          className="flex float-left overflow-hidden "
           onMouseEnter={() => setShow(!show)}
           onMouseLeave={() => setShow(!show)}
         >
-          <Link to="/photobooth" className="home flex  ">
+          <Link to="/photobooth" className="flex home ">
             <span></span>
             <span></span>
             <span></span>
@@ -71,7 +70,7 @@ export const Nav = () => {
             PHOTOBOOTH
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="h-6 w-6 pl-2"
+              className="w-6 h-6 pl-2"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
@@ -85,28 +84,28 @@ export const Nav = () => {
             </svg>
           </Link>
           {show ? (
-            <div className=" block absolute bg-white w-40 z-10 mt-6 rounded-lg shadow-xl">
+            <div className="absolute z-10 block w-40 mt-6 bg-white rounded-lg shadow-xl ">
               <Link
                 to="/photobooth"
-                className=" float-none text-black py-4 px-4 block text-left hover:text-gold hover:bg-black "
+                className="block float-none px-4 py-4 text-left text-black  hover:text-gold hover:bg-black"
               >
                 Nunti
               </Link>
               <a
                 href="#botez"
-                className="float-none text-black py-4 px-4 block text-left hover:text-gold hover:bg-black"
+                className="block float-none px-4 py-4 text-left text-black hover:text-gold hover:bg-black"
               >
                 Botez
               </a>
               <a
                 href="#aniversari"
-                className="float-none text-black py-4 px-4 block text-left hover:text-gold hover:bg-black"
+                className="block float-none px-4 py-4 text-left text-black hover:text-gold hover:bg-black"
               >
                 Aniversari
               </a>
               <Link
                 to="/accesorii"
-                className="float-none text-black py-4 px-4 block text-left hover:text-gold hover:bg-black"
+                className="block float-none px-4 py-4 text-left text-black hover:text-gold hover:bg-black"
               >
                 Accesorii & Personalizare
               </Link>

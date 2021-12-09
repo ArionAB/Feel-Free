@@ -10,7 +10,7 @@ const Scenotehnica = () => {
   const arrow = (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      className="h-5 w-5 "
+      className="w-5 h-5 "
       viewBox="0 0 20 20"
       fill="currentColor"
     >
@@ -38,22 +38,22 @@ const Scenotehnica = () => {
     </svg>
   );
   return (
-    <div className="bg-darkGrey bg-cover  h-full ">
-      <h1 className="flex justify-center text-white text-6xl pt-8  mb-12 border-t-2 border-gold">
+    <div className="h-full bg-cover bg-darkGrey ">
+      <h1 className="flex justify-center pt-8 mb-12 text-2xl text-white border-t-2 sm:text-6xl border-gold">
         Servicii sceno-tehnice
       </h1>
-      <div className="flex">
-        <div className="bg-white w-40v h-60v overflow-hidden gold-border">
-          <h1 className="bg-gold py-2 px-4">Cameo Hydrabeam 400 RGBW</h1>
+      <div className="flex flex-col md:flex-row">
+        <div className="overflow-hidden bg-white md:w-40v h-60v gold-border">
+          <h1 className="px-4 py-2 bg-gold">Cameo Hydrabeam 400 RGBW</h1>
           <img
-            className="h-auto w-auto"
+            className="w-auto h-auto"
             src={require("../images/cameo-hydrabeam.jpg").default}
             alt="Boxe Bose"
           ></img>
         </div>
-        <div className="bg-white w-40v h-60v ml-8 overflow-hidden gold-border">
-          <h1 className="bg-gold py-2 px-8 mb-4">Specificatii Tehnice</h1>
-          <p className="px-8 text-justify mb-4">
+        <div className="overflow-scroll bg-white md:ml-8 md:w-40v h-60v gold-border">
+          <h1 className="px-8 py-2 mb-4 bg-gold">Specificatii Tehnice</h1>
+          <p className="px-8 mb-4 text-justify">
             <b>Cameo Hydrabeam 400 RGBW </b>- sistem de lumini compus din 4
             moving-head-uri cu mișcare foarte rapidă, controlabile individual.
             Acestea sunt echipate cu LED-uri Cree de intensitate mare de 10W,
@@ -83,13 +83,13 @@ const Scenotehnica = () => {
           </ul>
         </div>
       </div>
-      <div className=" overflow-hidden pb-96 relative h-0  ">
+      <div className="relative h-0 overflow-hidden pb-96">
         <YoutubeEmbed embedId="c2tkXBbGLMY" />
       </div>
-      <div className="flex mt-8">
-        <div className="bg-white w-40v h-70v mr-8 overflow-hidden gold-border">
-          <h1 className="bg-gold py-2 px-8 mb-4">Specificatii Tehnice</h1>
-          <p className="px-8 text-justify mb-4">
+      <div className="flex flex-col mt-8 md:flex-row">
+        <div className="overflow-hidden bg-white md:mr-8 md:w-40v h-70v gold-border">
+          <h1 className="px-8 py-2 mb-4 bg-gold">Specificatii Tehnice</h1>
+          <p className="px-8 mb-4 text-justify">
             <b>Athletic DJ-6R150</b>, stand de lucru pentru DJ și stativ de
             lumini cu înălțime reglabilă si transversală decotruss
           </p>
@@ -106,8 +106,8 @@ const Scenotehnica = () => {
             <li className="flex bg-lightGrey">{arrow}greutate: 26 kg</li>
           </ul>
         </div>
-        <div className="bg-white w-40v h-70v overflow-hidden gold-border">
-          <h1 className="bg-gold py-2 px-4">Athletic DJ-6R150</h1>
+        <div className="overflow-hidden bg-white md:w-40v h-70v gold-border">
+          <h1 className="px-4 py-2 bg-gold">Athletic DJ-6R150</h1>
           <img
             className="object-fit"
             src={require("../images/athletic-dj.jpg").default}
@@ -115,18 +115,18 @@ const Scenotehnica = () => {
           ></img>
         </div>
       </div>
-      <div className="flex mt-8">
-        <div className="bg-white w-40v h-60v overflow-hidden gold-border">
-          <h1 className="bg-gold py-2 px-4">Cameo WOOKIE 400 RGB</h1>
+      <div className="flex flex-col mt-8 md:flex-row">
+        <div className="overflow-hidden bg-white md:w-40v h-60v gold-border">
+          <h1 className="px-4 py-2 bg-gold">Cameo WOOKIE 400 RGB</h1>
           <img
-            className="h-auto w-auto"
+            className="w-auto h-auto"
             src={require("../images/cameo-wookie.jpg").default}
             alt="Boxe Bose"
           ></img>
         </div>
-        <div className="bg-white w-40v h-60v ml-8 overflow-hidden gold-border">
-          <h1 className="bg-gold py-2 px-8 mb-4">Specificatii Tehnice</h1>
-          <p className="px-8 text-justify mb-4">
+        <div className="overflow-scroll bg-white md:ml-8 md:w-40v h-60v gold-border">
+          <h1 className="px-8 py-2 mb-4 bg-gold">Specificatii Tehnice</h1>
+          <p className="px-8 mb-4 text-justify">
             <b>Cameo WOOKIE 400 RGB </b>- efect de lumini laser ce oferă
             proiecții de raze laser în combinații de culori în spectru RGB
             (roșu, verde, albastru), la o putere de ieșire de 400 mW. Este un
@@ -161,13 +161,13 @@ const Scenotehnica = () => {
           </ul>
         </div>
       </div>
-      <div className=" overflow-hidden pb-96 relative h-0  ">
+      <div className="relative h-0 overflow-hidden pb-96">
         <YoutubeEmbed embedId="shnS5Gk709c" />
       </div>
-      <div className="flex mt-8">
-        <div className="bg-white w-40v h-70v mr-8 overflow-hidden gold-border">
-          <h1 className="bg-gold py-2 px-8 mb-4">Specificatii Tehnice</h1>
-          <p className="px-8 text-justify mb-4">
+      <div className="flex flex-col mt-8 md:flex-row">
+        <div className="overflow-hidden bg-white md:mr-8 md:w-40v h-70v gold-border">
+          <h1 className="px-8 py-2 mb-4 bg-gold">Specificatii Tehnice</h1>
+          <p className="px-8 mb-4 text-justify">
             <b>Eurolite NSF-250 LED DMX</b>,- mașină de fum cu iluminare LED în
             spectru RGB, controlată prin telecomandă wireless sau prin interfața
             DMX 512, cu posibilitate de emisie de fum orizontală sau verticală.
@@ -193,31 +193,31 @@ const Scenotehnica = () => {
             <li className="flex">{arrow}Voltaj de operare: 230 V</li>
           </ul>
         </div>
-        <div className="bg-white w-40v h-70v overflow-hidden gold-border">
-          <h1 className="bg-gold py-2 px-4">Eurolite NSF-250 LED DMX</h1>
+        <div className="overflow-hidden bg-white md:w-40v h-70v gold-border">
+          <h1 className="px-4 py-2 bg-gold">Eurolite NSF-250 LED DMX</h1>
           <img
-            className="object-fit"
+            className="h-full"
             src={require("../images/eurolite-nsf.jpg").default}
             alt="Boxe Bose"
           ></img>
         </div>
       </div>
-      <div className=" overflow-hidden pb-96 relative h-0  ">
+      <div className="relative h-0 overflow-hidden pb-96">
         <YoutubeEmbed embedId="WOyDVz53BhU" />
       </div>
 
-      <div className="flex mt-8">
-        <div className="bg-white w-40v h-60v overflow-hidden gold-border">
-          <h1 className="bg-gold py-2 px-4">Cameo Root PAR 4</h1>
+      <div className="flex flex-col mt-8 md:flex-row">
+        <div className="overflow-hidden bg-white md:w-40v h-60v gold-border">
+          <h1 className="px-4 py-2 bg-gold">Cameo Root PAR 4</h1>
           <img
-            className="h-auto w-auto"
+            className="w-auto h-auto"
             src={require("../images/cameo-root.jpg").default}
             alt="Boxe Bose"
           ></img>
         </div>
-        <div className="bg-white w-40v h-60v ml-8 overflow-hidden gold-border">
-          <h1 className="bg-gold py-2 px-8 mb-4">Specificatii Tehnice</h1>
-          <p className="px-8 text-justify mb-4">
+        <div className="overflow-scroll bg-white md:ml-8 md:w-40v h-60v gold-border">
+          <h1 className="px-8 py-2 mb-4 bg-gold">Specificatii Tehnice</h1>
+          <p className="px-8 mb-4 text-justify">
             <b>Cameo Root PAR 4 </b>- Soluția optimă pentru efecte de iluminare
             sofisticate, profesionale și, de asemenea, ideală pentru locații de
             evenimente mai mici. Acest FLAT PAR are caracteristici inteligente,
@@ -227,7 +227,7 @@ const Scenotehnica = () => {
             conexiuni de alimentare compatibile cu PowerCON. Acesta acceptă
             chiar și W-DMX prin intermediul unui stick iDMX opțional.{" "}
           </p>
-          <p className="px-8 text-justify mb-4">
+          <p className="px-8 mb-4 text-justify">
             Spectacole de lumini mari și vibrante pot fi create prin legarea
             daisy-chain a mai multor dispozitive. Posibilitățile dvs. creative
             sunt nelimitate. Semnalul DMX și intrarea / ieșirea de putere sunt
@@ -236,7 +236,7 @@ const Scenotehnica = () => {
             patentat, să creați modele de lumină palpitante și schimbări de
             culoare cu o programare minimă.
           </p>
-          <p className="px-8 text-justify mb-4">
+          <p className="px-8 mb-4 text-justify">
             Culorile și setările sunt ușor reglabile fără telecomandă prin
             intermediul a patru butoane și a afișajului OLED. Controlul unității
             prin DMX în modul master-slave sau standalone este posibil. Un
@@ -246,10 +246,10 @@ const Scenotehnica = () => {
         </div>
       </div>
 
-      <div className="flex mt-8">
-        <div className="bg-white w-40v h-70v mr-8 overflow-hidden gold-border">
-          <h1 className="bg-gold py-2 px-8 mb-4">Specificatii Tehnice</h1>
-          <p className="px-8 text-justify mb-4">
+      <div className="flex flex-col mt-8 md:flex-row">
+        <div className="overflow-hidden bg-white md:mr-8 md:w-40v h-70v gold-border">
+          <h1 className="px-8 py-2 mb-4 bg-gold">Specificatii Tehnice</h1>
+          <p className="px-8 mb-4 text-justify">
             <b>Eurolite SD-201 DMX</b>- mașină de bule controlabilă DMX,
             echipată cu două discuri pentru bule, cu adresare și setare prin
             switch-uri dip, cu operare permanentă sau controlată prin
@@ -271,17 +271,17 @@ const Scenotehnica = () => {
             </li>
           </ul>
         </div>
-        <div className="bg-white w-40v h-70v overflow-hidden gold-border">
-          <h1 className="bg-gold py-2 px-4">Eurolite SD-201 DMX</h1>
+        <div className="overflow-hidden bg-white md:w-40v h-70v gold-border">
+          <h1 className="px-4 py-2 bg-gold">Eurolite SD-201 DMX</h1>
           <img
-            className="object-fit"
+            className="h-full"
             src={require("../images/eurolite-sd.jpg").default}
             alt="Boxe Bose"
           ></img>
         </div>
       </div>
       <CustomSlidePB />
-      <div className="text-white text-xl font-medium text-justify w-60v m-auto mt-16">
+      <div className="m-auto mt-16 text-xl font-medium text-justify text-white w-60v">
         <p className="mb-6">
           Prezenta efectelor de lumini din cadrul oricarui eveniment este foarte
           importanta. Avand si un rol decorativ, lumina contribuie la
@@ -311,8 +311,8 @@ const Scenotehnica = () => {
           diverse organizatii, institutii sau companii.
         </p>
       </div>
-      <div className="text-white w-60v m-auto ">
-        <h3 className="text-gold font-semibold text-xl mt-16 mb-8">
+      <div className="m-auto text-white w-60v ">
+        <h3 className="mt-16 mb-8 text-xl font-semibold text-gold">
           Feel Free Events dispune de urmatoarele echipamente de sceno-tehnica:
         </h3>
         <div className="flex mb-4">
@@ -335,7 +335,7 @@ const Scenotehnica = () => {
           {YellowArrow}
           <p>Cameo Root PAR 4</p>
         </div>
-        <div className="flex mb-4 pb-12">
+        <div className="flex pb-12 mb-4">
           {YellowArrow}
           <p>Eurolite SD-201 DMX</p>
         </div>

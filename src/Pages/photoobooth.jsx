@@ -6,13 +6,13 @@ import { YoutubeEmbed } from "../Components/YoutubeEmbed";
 export const Photobooth = () => {
   return (
     <div>
-      <div className=" overflow-hidden pb-96 relative h-0">
+      <div className="relative h-0 overflow-hidden pb-96">
         <YoutubeEmbed embedId="tKSsJeCzV3Y?autoplay=1" />
       </div>
 
-      <div className="flex">
-        <div className="mr-8 bg-white text-justify w-40v h-60v border-2 border-gold">
-          <h1 className="bg-gold pl-8 py-2 mb-7">Informatii</h1>
+      <div className="flex flex-col lg:flex-row">
+        <div className="w-full mr-8 overflow-scroll text-justify bg-white border-2 lg:w-40v h-60v border-gold">
+          <h1 className="py-2 pl-8 bg-gold mb-7">Informatii</h1>
           <p className="px-8 mb-5">
             <b>Cabina foto OGLINDĂ</b> este un produs de ultimă generație,
             oferind o interfață mult mai interactivă și foarte atractivă. Se
@@ -35,9 +35,9 @@ export const Photobooth = () => {
             calitatea fotografiilor.
           </p>
         </div>
-        <div className="bg-white w-40v h-60v border-2 border-gold overflow-hidden">
-          <h1 className="bg-gold pl-8 py-2 ">FOTO</h1>
-          <div className="h-full w-full">
+        <div className="overflow-hidden bg-white border-2 lg:w-40v h-60v border-gold">
+          <h1 className="py-2 pl-8 bg-gold ">FOTO</h1>
+          <div className="w-full h-full">
             <img
               className="w-full h-full"
               src={require("../images/magic-mirror.jpg").default}
@@ -46,38 +46,38 @@ export const Photobooth = () => {
           </div>
         </div>
       </div>
-      <div className="flex flex-row h-30v  mt-10 ">
-        <div className="flex flex-col border-2 border-gold bg-white">
-          <h1 className="bg-gold pl-8 py-2">Ecran</h1>
-          <p className="px-8 mb-5 text-justify py-5">
+      <div className="flex flex-col mt-10 md:flex-row lg:h-30v ">
+        <div className="flex flex-col bg-white border-2 border-gold">
+          <h1 className="py-2 pl-8 bg-gold">Ecran</h1>
+          <p className="px-8 py-5 mb-5 text-justify">
             Touch IR multipunct de 65 inch de ultima generație. Ecranul este un
             display LED full HD 108 cm. Imaginile arată mai bine datorită
             culorilor și luminozității realiste.
           </p>
         </div>
 
-        <div className="flex flex-col h-30v ml-8 border-2 border-gold bg-white">
-          <h1 className="bg-gold pl-8 py-2">Aparat FOTO</h1>
-          <p className="px-8 mb-5 text-justify py-5">
+        <div className="flex flex-col bg-white border-2 md:ml-8 lg:h-30v border-gold">
+          <h1 className="py-2 pl-8 bg-gold">Aparat FOTO</h1>
+          <p className="px-8 py-5 mb-5 text-justify">
             Camera foto Nikon D3500 este o cameră foto profesională DSLR
             însoțita de un obiectiv cu zoom. Camera foto realizează fotografii
             de o calitate superioară.
           </p>
         </div>
 
-        <div className="flex flex-col h-30v ml-8 border-2 border-gold bg-white">
-          <h1 className="bg-gold pl-8 py-2">Blitz profesional studio</h1>
-          <p className="px-8 mb-5 text-justify py-5">
+        <div className="flex flex-col bg-white border-2 md:ml-8 lg:h-30v border-gold">
+          <h1 className="py-2 pl-8 bg-gold">Blitz profesional studio</h1>
+          <p className="px-8 py-5 mb-5 text-justify">
             Folosim un blitz profesional care este alegerea ideală pentru o
             cabină foto sigură și vine însoțit de umbrelă pentru ca lumina să
             fie perfectă.
           </p>
         </div>
       </div>
-      <div className="flex mt-8">
-        <div className="mr-8 bg-white text-justify w-40v h-60v overflow-hidden border-2 border-gold">
-          <h1 className="bg-gold pl-8 py-2">Foto</h1>
-          <div className="h-full w-full ">
+      <div className="flex flex-col mt-8 lg:flex-row">
+        <div className="overflow-hidden text-justify bg-white border-2 lg:mr-8 lg:w-40v h-60v border-gold">
+          <h1 className="py-2 pl-8 bg-gold">Foto</h1>
+          <div className="w-full h-full ">
             <img
               className="w-full h-full"
               src={require("../images/magic-mirror2.jpg").default}
@@ -85,8 +85,8 @@ export const Photobooth = () => {
             ></img>
           </div>
         </div>
-        <div className=" bg-white text-justify w-40v h-60v border-2 border-gold">
-          <h1 className="bg-gold pl-8 py-2 mb-7">Informatii</h1>
+        <div className="overflow-scroll text-justify bg-white border-2 lg:w-40v h-60v border-gold">
+          <h1 className="py-2 pl-8 bg-gold mb-7">Informatii</h1>
           <p className="px-8 mb-5">
             <b>Ramă decorativă.</b>
           </p>
@@ -111,11 +111,11 @@ export const Photobooth = () => {
           </p>
         </div>
       </div>
-      <div className="bg-darkGrey pb-2 px-6">
-        <h1 className="text-gold text-5xl font-medium py-16 ">
+      <div className="px-6 pb-2 bg-darkGrey">
+        <h1 className="py-16 text-5xl font-medium text-gold ">
           CABINA FOTO NUNTĂ
         </h1>
-        <p className="text-white text-justify pr-6">
+        <p className="pr-6 text-justify text-white">
           Nunta și invitații voștri merită un photo booth și distracție pe
           măsură. Așa că transformă-ți ziua specială în cea mai tare petrecere a
           anului! Cabinele noastre sunt concepute ca studiouri foto mobile,
@@ -129,17 +129,17 @@ export const Photobooth = () => {
         </p>
         <Link
           to="/contact"
-          className=" flex justify-center bg-gold  hover:bg-black  hover:text-gold text-black hover:border-solid border-4 border-gold  font-bold py-2 px-8 my-8 rounded-full w-1/6"
+          className="flex justify-center w-full px-8 py-2 my-8 font-bold text-black border-4 rounded-full lg:w-1/3 xl:w-1/6 bg-gold hover:bg-black hover:text-gold hover:border-solid border-gold"
         >
           Cere Oferta
         </Link>
       </div>
       <CustomSlidePB />
-      <div className="bg-darkGrey pb-2 px-6">
-        <h1 id="botez" className="text-gold text-5xl font-medium py-16 ">
+      <div className="px-6 pb-2 bg-darkGrey">
+        <h1 id="botez" className="py-16 text-5xl font-medium text-gold ">
           CABINA FOTO BOTEZ
         </h1>
-        <p className="text-white text-justify pr-6">
+        <p className="pr-6 text-justify text-white">
           Fiecare petrecere de botez se dorește a fi specială. Și noi știm cum!
           Vrem să oferim ce este mai bun pentru micuțul nostru, organizăm în cel
           mai mic detaliu marea lui petrecere și ne dorim ca invitații să se
@@ -151,17 +151,17 @@ export const Photobooth = () => {
         </p>
         <Link
           to="/contact"
-          className=" flex justify-center bg-gold  hover:bg-black  hover:text-gold text-black hover:border-solid border-4 border-gold  font-bold py-2 px-8 my-8 rounded-full w-1/6"
+          className="flex justify-center w-full px-8 py-2 my-8 font-bold text-black border-4 rounded-full lg:w-1/3 xl:w-1/6 bg-gold hover:bg-black hover:text-gold hover:border-solid border-gold"
         >
           Cere Oferta
         </Link>
       </div>
       <CustomSlidePB />
-      <div className="bg-darkGrey pb-2 px-6">
-        <h1 id="aniversari" className="text-gold text-5xl font-medium py-16 ">
+      <div className="px-6 pb-2 bg-darkGrey">
+        <h1 id="aniversari" className="py-16 text-5xl font-medium text-gold ">
           CABINA FOTO ANIVERSĂRI
         </h1>
-        <p className="text-white text-justify pr-6">
+        <p className="pr-6 text-justify text-white mb-7 md:mb-0">
           Petrecerea de majorat este unică, este momentul în care ești special
           si vrei să strălucești iar prietenii și colegii să vorbească tot anul
           despre cât de tare a fost la petrecere. Este un moment important în
@@ -173,7 +173,7 @@ export const Photobooth = () => {
         </p>
         <Link
           to="/contact"
-          className=" flex justify-center bg-gold  hover:bg-black  hover:text-gold text-black hover:border-solid border-4 border-gold  font-bold py-2 px-8 my-8 rounded-full w-1/6"
+          className="flex justify-center w-full px-8 py-2 my-8 font-bold text-black border-4 rounded-full lg:w-1/3 xl:w-1/6 bg-gold hover:bg-black hover:text-gold hover:border-solid border-gold"
         >
           Cere Oferta
         </Link>

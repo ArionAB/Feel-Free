@@ -39,7 +39,7 @@ function Hero() {
     dots: false,
     fade: true,
     infinite: true,
-    autoplay: false,
+    autoplay: true,
     autoplaySpeed: 3000,
     cssEase: "linear",
     speed: 500,

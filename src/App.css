@@ -25,6 +25,12 @@ body {
   cursor: pointer;
 }
 
+@media only screen and (max-width: 768px) {
+  article-right {
+    margin-left: 0px;
+  }
+}
+
 article-right {
   margin-left: 20px;
 }

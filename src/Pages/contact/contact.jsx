@@ -52,6 +52,7 @@ export const Contact = () => {
       )
       .then(
         (result) => {
+          alert("Formular trimis cu succes!");
           console.log(result.text);
         },
         (error) => {
@@ -119,14 +120,14 @@ export const Contact = () => {
     if (hasErrors) {
       setErrors(newErrors);
       return;
-    } else console.log("aa");
+    } else;
     sendEmail();
   };
 
   return (
-    <div className="flex-col font-bold text-gold bg-darkGrey bg-no-repeat bg-cover bg-center pl-6">
-      <h1 className="flex text-6xl mt-12">CONTACT</h1>
-      <div className="flex">
+    <div className="flex-col pl-6 font-bold bg-center bg-no-repeat bg-cover text-gold bg-darkGrey w-80v">
+      <h1 className="flex mt-12 text-6xl">CONTACT</h1>
+      <div className="flex flex-col xl:flex-row">
         <div className="flex-col">
           <h2 className="flex mt-12 text-3xl">
             Ne-ar face plăcere să vorbim cu tine!
@@ -134,16 +135,16 @@ export const Contact = () => {
           <h2 className="flex mt-3 text-2xl">Formular cerere ofertă</h2>
           <form
             ref={form}
-            className="w-5/5 mr-24"
+            className="mr-24 w-5/5"
             onSubmit={handleSubmit}
             noValidate
           >
-            <article className="flex">
-              <article-left className="">
+            <article className="flex flex-col sm:flex-row ">
+              <article-left className="w-2/4 ml-4">
                 <label className="flex flex-col items-start mt-3 ">
                   Nume:
                   <input
-                    className={clsx("w-96 p-2 mt-3 mb-3 ", {
+                    className={clsx("w-full md:w-72 lg:w-96 p-2 mt-3 mb-3 ", {
                       "border-2 border-red-500": errors.nume,
                     })}
                     type="text"
@@ -157,7 +158,7 @@ export const Contact = () => {
                 <label className="flex flex-col items-start">
                   Email:
                   <input
-                    className={clsx("w-96 p-2 mt-3 mb-3 ", {
+                    className={clsx("w-full md:w-72 lg:w-96 p-2 mt-3 mb-3 ", {
                       "border-2 border-red-500": errors.email,
                     })}
                     type="email"
@@ -171,7 +172,7 @@ export const Contact = () => {
                 <label className="flex flex-col items-start">
                   Data evenimentului:
                   <input
-                    className={clsx("w-96 p-2 mt-3 mb-3 ", {
+                    className={clsx("w-full md:w-72 lg:w-96 p-2 mt-3 mb-3 ", {
                       "border-2 border-red-500": errors.data,
                     })}
                     type="date"
@@ -185,7 +186,7 @@ export const Contact = () => {
                 <label className="flex flex-col items-start">
                   Tip eveniment:
                   <input
-                    className={clsx("w-96 p-2 mt-3 mb-3 ", {
+                    className={clsx("w-full md:w-72 lg:w-96 p-2 mt-3 mb-3 ", {
                       "border-2 border-red-500": errors.tip,
                     })}
                     type="text"
@@ -197,11 +198,11 @@ export const Contact = () => {
                   <p className="text-red-500">{errors.tip}</p>
                 </label>
               </article-left>
-              <article-right className="">
+              <article-right className="flex flex-col w-2/4">
                 <label className="flex flex-col items-start mt-3 ">
                   Telefon:
                   <input
-                    className={clsx("w-96 p-2 mt-3 mb-3 ", {
+                    className={clsx("w-full md:w-72 lg:w-96  p-2 mt-3 mb-3 ", {
                       "border-2 border-red-500": errors.number,
                     })}
                     type="number"
@@ -215,7 +216,7 @@ export const Contact = () => {
                 <label className="flex flex-col items-start">
                   Locație:
                   <input
-                    className={clsx("w-96 p-2 mt-3 mb-3 ", {
+                    className={clsx("w-full md:w-72 lg:w-96 p-2 mt-3 mb-3 ", {
                       "border-2 border-red-500": errors.locatie,
                     })}
                     type="text"
@@ -229,7 +230,7 @@ export const Contact = () => {
                 <label className="flex flex-col items-start">
                   Număr de ore:
                   <input
-                    className={clsx("w-96 p-2 mt-3 mb-3 ", {
+                    className={clsx("w-full md:w-72 lg:w-96 p-2 mt-3 mb-3 ", {
                       "border-2 border-red-500": errors.ore,
                     })}
                     type="text"
@@ -243,7 +244,7 @@ export const Contact = () => {
                 <label className="flex flex-col items-start">
                   Număr invitați:
                   <input
-                    className="w-96 p-2 mt-3 mb-3 "
+                    className="w-full p-2 mt-3 mb-3 "
                     type="text"
                     name="invitati"
                     value={invitati}
@@ -256,7 +257,7 @@ export const Contact = () => {
             <label className="flex flex-col items-start text-xl">
               Mesajul tău
               <textarea
-                className="text-xl p-2 mt-3 mb-3 w-full h-28"
+                className="w-full p-2 mt-3 mb-3 text-xl h-28"
                 name="mesaj"
                 value={mesaj}
                 onChange={handleChange}
@@ -265,21 +266,21 @@ export const Contact = () => {
             </label>
 
             <button
-              className="flex justify-center  bg-gold  hover:bg-black  hover:text-gold text-black font-bold py-2 px-4 my-8 rounded-full w-1/4"
+              className="flex justify-center w-2/4 px-4 py-2 my-8 font-bold text-black rounded-full sm:w-1/4 bg-gold hover:bg-black hover:text-gold"
               type="submit"
             >
               Trimite
             </button>
           </form>
         </div>
-        <div className="mt-12 flex flex-col justify-between h-48">
-          <h1 className="text-4xl">Date contact</h1>
+        <div className="flex flex-col h-48 mt-12 xl:justify-between">
+          <h1 className="mb-8 text-4xl xl:mb-0">Date contact</h1>
           <div className="text-xl font-bold ">
             <p className="flex">
               {" "}
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="h-6 w-6 mr-2"
+                className="w-6 h-6 mr-2"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
@@ -296,7 +297,7 @@ export const Contact = () => {
             <p className="flex">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="h-6 w-6 mr-2"
+                className="w-6 h-6 mr-2"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"

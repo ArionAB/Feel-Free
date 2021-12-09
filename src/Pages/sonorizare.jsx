@@ -1,13 +1,11 @@
 import React from "react";
 
-import { CustomSlide } from "../Components/custom-slide";
 import { YoutubeEmbed } from "../Components/YoutubeEmbed";
-import nav from "../images/nav.jpg";
 
 const arrow = (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    className="h-5 w-5 "
+    className="w-5 h-5 "
     viewBox="0 0 20 20"
     fill="currentColor"
   >
@@ -22,25 +20,25 @@ const arrow = (
 const Sonorizare = () => {
   return (
     <>
-      <div className="bg-darkGrey h-20 flex justify-center items-center text-white text-xl border-t-2 border-gold ">
+      <div className="flex items-center justify-center h-20 py-20 text-xl text-white border-t-2 md:py-0 bg-darkGrey border-gold ">
         <p>
           Sonorizari evenimente si inchirieri sisteme audio pentru sonorizari
           evenimente de orice gen – prezentari, conferinte, nunti, botezuri,
           petreceri etc.
         </p>
       </div>
-      <div className="flex">
-        <div className="bg-white w-40v h-70v overflow-hidden gold-border">
-          <h1 className="bg-gold py-2 px-4">2x Bose F1 Model 812</h1>
+      <div className="flex flex-col lg:flex-row">
+        <div className="overflow-hidden bg-white lg:w-40v h-70v gold-border">
+          <h1 className="px-4 py-2 bg-gold">2x Bose F1 Model 812</h1>
           <img
-            className="h-auto w-auto"
+            className="w-auto h-auto"
             src={require("../images/bose-f1.jpg").default}
             alt="Boxe Bose"
           ></img>
         </div>
-        <div className="bg-white w-40v h-70v ml-8 overflow-hidden gold-border">
-          <h1 className="bg-gold py-2 px-8 mb-4">Specificatii Tehnice</h1>
-          <p className="px-8 text-justify mb-4">
+        <div className="overflow-scroll bg-white lg:ml-8 lg:w-40v h-70v gold-border">
+          <h1 className="px-8 py-2 mb-4 bg-gold">Specificatii Tehnice</h1>
+          <p className="px-8 mb-4 text-justify">
             <b>Bose F1 Model 812</b>, boxă activă de tip șir vertical, prin
             mișcarea modulelor de înalte/medii permite crearea de diferite
             modele de acoperire verticală, iar sistemul își schimbă automat
@@ -75,10 +73,10 @@ const Sonorizare = () => {
         </div>
       </div>
 
-      <div className="flex mt-8">
-        <div className="bg-white w-40v h-70v mr-8 overflow-hidden gold-border">
-          <h1 className="bg-gold py-2 px-8 mb-4">Specificatii Tehnice</h1>
-          <p className="px-8 text-justify mb-4">
+      <div className="flex flex-col mt-8 lg:flex-row">
+        <div className="overflow-scroll bg-white lg:mr-8 lg:w-40v h-70v gold-border">
+          <h1 className="px-8 py-2 mb-4 bg-gold">Specificatii Tehnice</h1>
+          <p className="px-8 mb-4 text-justify">
             <b>Subwoofer activ</b>, compact, ideal pentru extinderea
             frecvențelor joase într-un sistem Bose F1. Standul de mondtare
             pentru satelitul Bose F1 Model 812 este integrat chiar în corpul
@@ -86,7 +84,7 @@ const Sonorizare = () => {
             simplu de instalat. Standul include canale pentru cabluri, pentru a
             masca firele.
           </p>
-          <p className="px-8 text-justify mb-4">
+          <p className="px-8 mb-4 text-justify">
             EQ-ul pe ieșire setează ieșirea subwoofer-ului F1 pe un filtru
             trece-sus sau full-range, ceea ce permite selectarea ușoară a
             frecvenței de crossover atunci când este folosit cu o boxă
@@ -105,8 +103,8 @@ const Sonorizare = () => {
             <li className="flex">{arrow}la -10 dB: 38 Hz – 250 Hz</li>
           </ul>
         </div>
-        <div className="bg-white w-40v h-70v overflow-hidden gold-border">
-          <h1 className="bg-gold py-2 px-4">2x Bose F1 Sub</h1>
+        <div className="overflow-hidden bg-white lg:w-40v h-70v gold-border">
+          <h1 className="px-4 py-2 bg-gold">2x Bose F1 Sub</h1>
           <img
             className="object-fit"
             src={require("../images/bose-f1-sub.jpg").default}
@@ -114,21 +112,21 @@ const Sonorizare = () => {
           ></img>
         </div>
       </div>
-      <div className=" overflow-hidden pb-96 relative h-0  ">
+      <div className="relative h-0 overflow-hidden pb-96">
         <YoutubeEmbed embedId="vKDjIgjcFhA" />
       </div>
-      <div className="flex mt-8">
-        <div className="bg-white w-40v h-70v overflow-hidden gold-border">
-          <h1 className="bg-gold py-2 px-4 mb-8">Pioneer DJ DDJ-1000</h1>
+      <div className="flex flex-col mt-8 lg:flex-row">
+        <div className="overflow-hidden bg-white lg:w-40v h-70v gold-border">
+          <h1 className="px-4 py-2 mb-8 bg-gold">Pioneer DJ DDJ-1000</h1>
           <img
             src={require("../images/pioneer-dj.jpg").default}
             alt="Boxe Bose"
           ></img>
         </div>
 
-        <div className="bg-white w-40v h-70v ml-8 overflow-hidden gold-border">
-          <h1 className="bg-gold py-2 px-8 mb-4">Specificatii Tehnice</h1>
-          <p className="px-8 text-justify mb-4">
+        <div className="overflow-scroll bg-white lg:ml-8 lg:w-40v h-70v gold-border">
+          <h1 className="px-8 py-2 mb-4 bg-gold">Specificatii Tehnice</h1>
+          <p className="px-8 mb-4 text-justify">
             <b>Pioneer DDJ-1000 - Controler DJ cu 4 canale </b> cu mixer
             standalone și joguri moștenite direct de la CDJ2000NXS2. Mixerul
             dispune de o mare parte din funcțiile unui mixer DJM900NXS2, iar în
@@ -162,13 +160,13 @@ const Sonorizare = () => {
           </ul>
         </div>
       </div>
-      <div className=" overflow-hidden pb-96 relative h-0">
+      <div className="relative h-0 overflow-hidden pb-96">
         <YoutubeEmbed embedId="hqlX5o5oxn0" />
       </div>
-      <div className="flex mt-8">
-        <div className="bg-white w-40v h-70v mr-8 overflow-hidden gold-border">
-          <h1 className="bg-gold py-2 px-8 mb-4">Specificatii Tehnice</h1>
-          <p className="px-8 text-justify mb-4">
+      <div className="flex flex-col mt-8 lg:flex-row">
+        <div className="overflow-scroll bg-white lg:mr-8 lg:w-40v h-70v gold-border">
+          <h1 className="px-8 py-2 mb-4 bg-gold">Specificatii Tehnice</h1>
+          <p className="px-8 mb-4 text-justify">
             <b>U306 HHD -</b>, Set wireless cu microfon de mâna, sistem
             Diversity UHF cu tehnologie FM cu 12 canale, recomandat pentru
             aplicații semi-profesionale:
@@ -203,8 +201,8 @@ const Sonorizare = () => {
             <li className="flex">{arrow}ieșire XLR și jack pentru receptor</li>
           </ul>
         </div>
-        <div className="bg-white w-40v h-70v overflow-hidden gold-border">
-          <h1 className="bg-gold py-2 px-4">LD Systems U306 HHD</h1>
+        <div className="overflow-hidden bg-white lg:w-40v h-70v gold-border">
+          <h1 className="px-4 py-2 bg-gold">LD Systems U306 HHD</h1>
           <img
             className="object-fit"
             src={require("../images/ld-systems.jpg").default}
@@ -212,9 +210,9 @@ const Sonorizare = () => {
           ></img>
         </div>
       </div>
-      <div className="flex mt-8">
-        <div className="bg-white w-40v h-70v overflow-hidden gold-border">
-          <h1 className="bg-gold py-2 px-4 mb-8">Pioneer DJ HDJ-X10</h1>
+      <div className="flex flex-col mt-8 lg:flex-row">
+        <div className="overflow-hidden bg-white lg:w-40v h-70v gold-border">
+          <h1 className="px-4 py-2 mb-8 bg-gold">Pioneer DJ HDJ-X10</h1>
           <img
             className=""
             src={require("../images/pioneer-dj-casti.jpg").default}
@@ -222,9 +220,9 @@ const Sonorizare = () => {
           ></img>
         </div>
 
-        <div className="bg-white w-40v h-70v ml-8 overflow-hidden gold-border">
-          <h1 className="bg-gold py-2 px-8 mb-4">Specificatii Tehnice</h1>
-          <p className="px-8 text-justify mb-4">
+        <div className="overflow-scroll bg-white lg:ml-8 lg:w-40v h-70v gold-border">
+          <h1 className="px-8 py-2 mb-4 bg-gold">Specificatii Tehnice</h1>
+          <p className="px-8 mb-4 text-justify">
             <b>HDJ-X10 - </b> căști profesionale de monitorizare DJ, dinamice,
             echipate cu drivere de 50mm ce oferă un sunet audio de o foarte
             înaltă calitate și permit o monitorizare clară chiar și la volum
