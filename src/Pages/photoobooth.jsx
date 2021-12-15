@@ -85,8 +85,8 @@ export const Photobooth = () => {
           <h1 className="py-2 pl-8 bg-gold">Foto</h1>
           <div className="w-full h-full ">
             <img
-              className="w-full h-full"
-              src={require("../images/magic-mirror2.jpg").default}
+              className="w-full h-full "
+              src={require("../images/feel-freePB.jpg").default}
               alt="photobooth"
             ></img>
           </div>
