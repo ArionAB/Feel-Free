@@ -142,14 +142,17 @@ export const Contact = () => {
             onSubmit={handleSubmit}
             noValidate
           >
-            <article className="flex flex-col sm:flex-row ">
-              <article-left className="w-2/4 ml-4">
+            <article className="flex flex-col sm:flex-row">
+              <articleLeft className="mr-4 ">
                 <label className="flex flex-col items-start mt-3 ">
                   Nume:
                   <input
-                    className={clsx("w-full md:w-72 lg:w-96 p-2 mt-3 mb-3 ", {
-                      "border-2 border-red-500": errors.nume,
-                    })}
+                    className={clsx(
+                      " w-72 sm:w-full md:w-72 lg:w-96 p-2 mt-3 mb-3 ",
+                      {
+                        "border-2 border-red-500": errors.nume,
+                      }
+                    )}
                     type="text"
                     name="nume"
                     value={nume}
@@ -161,9 +164,12 @@ export const Contact = () => {
                 <label className="flex flex-col items-start">
                   Email:
                   <input
-                    className={clsx("w-full md:w-72 lg:w-96 p-2 mt-3 mb-3 ", {
-                      "border-2 border-red-500": errors.email,
-                    })}
+                    className={clsx(
+                      "w-72 sm:w-full md:w-72 lg:w-96 p-2 mt-3 mb-3 ",
+                      {
+                        "border-2 border-red-500": errors.email,
+                      }
+                    )}
                     type="email"
                     name="email"
                     value={email}
@@ -175,9 +181,12 @@ export const Contact = () => {
                 <label className="flex flex-col items-start">
                   Data evenimentului:
                   <input
-                    className={clsx("w-full md:w-72 lg:w-96 p-2 mt-3 mb-3 ", {
-                      "border-2 border-red-500": errors.data,
-                    })}
+                    className={clsx(
+                      "w-72 sm:w-full md:w-72 lg:w-96 p-2 mt-3 mb-3 ",
+                      {
+                        "border-2 border-red-500": errors.data,
+                      }
+                    )}
                     type="date"
                     name="data"
                     value={data}
@@ -189,9 +198,12 @@ export const Contact = () => {
                 <label className="flex flex-col items-start">
                   Tip eveniment:
                   <input
-                    className={clsx("w-full md:w-72 lg:w-96 p-2 mt-3 mb-3 ", {
-                      "border-2 border-red-500": errors.tip,
-                    })}
+                    className={clsx(
+                      "w-72 sm:w-full md:w-72 lg:w-96 p-2 mt-3 mb-3 ",
+                      {
+                        "border-2 border-red-500": errors.tip,
+                      }
+                    )}
                     type="text"
                     name="tip"
                     value={tip}
@@ -200,14 +212,17 @@ export const Contact = () => {
                   ></input>
                   <p className="text-red-500">{errors.tip}</p>
                 </label>
-              </article-left>
+              </articleLeft>
               <article-right className="flex flex-col w-2/4">
                 <label className="flex flex-col items-start mt-3 ">
                   Telefon:
                   <input
-                    className={clsx("w-full md:w-72 lg:w-96  p-2 mt-3 mb-3 ", {
-                      "border-2 border-red-500": errors.number,
-                    })}
+                    className={clsx(
+                      "w-72 sm:w-full md:w-72 lg:w-96  p-2 mt-3 mb-3 ",
+                      {
+                        "border-2 border-red-500": errors.number,
+                      }
+                    )}
                     type="number"
                     name="number"
                     value={number}
@@ -219,9 +234,12 @@ export const Contact = () => {
                 <label className="flex flex-col items-start">
                   Locație:
                   <input
-                    className={clsx("w-full md:w-72 lg:w-96 p-2 mt-3 mb-3 ", {
-                      "border-2 border-red-500": errors.locatie,
-                    })}
+                    className={clsx(
+                      "w-72 sm:w-full md:w-72 lg:w-96 p-2 mt-3 mb-3 ",
+                      {
+                        "border-2 border-red-500": errors.locatie,
+                      }
+                    )}
                     type="text"
                     name="locatie"
                     value={locatie}
@@ -233,9 +251,12 @@ export const Contact = () => {
                 <label className="flex flex-col items-start">
                   Număr de ore:
                   <input
-                    className={clsx("w-full md:w-72 lg:w-96 p-2 mt-3 mb-3 ", {
-                      "border-2 border-red-500": errors.ore,
-                    })}
+                    className={clsx(
+                      "w-72 sm:w-full md:w-72 lg:w-96 p-2 mt-3 mb-3 ",
+                      {
+                        "border-2 border-red-500": errors.ore,
+                      }
+                    )}
                     type="text"
                     name="ore"
                     value={ore}
@@ -247,7 +268,7 @@ export const Contact = () => {
                 <label className="flex flex-col items-start">
                   Număr invitați:
                   <input
-                    className="w-full p-2 mt-3 mb-3 "
+                    className="w-72 sm:w-full md:w-72 lg:w-96 p-2 mt-3 mb-3 "
                     type="text"
                     name="invitati"
                     value={invitati}
@@ -260,7 +281,7 @@ export const Contact = () => {
             <label className="flex flex-col items-start text-xl">
               Mesajul tău
               <textarea
-                className="w-full p-2 mt-3 mb-3 text-xl h-28"
+                className="w-72 sm:w-full p-2 mt-3 mb-3 text-xl h-28"
                 name="mesaj"
                 value={mesaj}
                 onChange={handleChange}
@@ -269,7 +290,7 @@ export const Contact = () => {
             </label>
 
             <button
-              className="flex justify-center w-2/4 px-4 py-2 my-8 font-bold text-black rounded-full sm:w-1/4 bg-gold hover:bg-black hover:text-gold"
+              className="flex justify-center w-full px-4 py-2 my-8 font-bold text-black rounded-full sm:w-1/4 bg-gold hover:bg-black hover:text-gold"
               type="submit"
             >
               Trimite

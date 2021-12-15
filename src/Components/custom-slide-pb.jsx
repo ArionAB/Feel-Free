@@ -28,13 +28,13 @@ export const CustomSlidePB = () => {
     <div className="mb-36">
       <Slider {...settings}>
         <div>
-          <img src={arc01} className=" w-80v h-60v " />
+          <img src={arc01} className=" w-80v h-30v lg:h-60v " />
         </div>
         <div>
-          <img src={arc02} className=" w-80v h-60v " />
+          <img src={arc02} className=" w-80v h-30v lg:h-60v " />
         </div>
         <div>
-          <img src={arc03} className=" w-80v h-60v " />
+          <img src={arc03} className=" w-80v h-30v lg:h-60v " />
         </div>
       </Slider>
     </div>

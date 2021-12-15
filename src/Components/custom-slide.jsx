@@ -6,15 +6,23 @@ import potato02 from "../images/potato02.jpeg";
 import potato03 from "../images/potato03.jpeg";
 import potato04 from "../images/potato04.jpeg";
 
-export const CustomSlide = () => {
+export const CustomSlide = ({ photo01, photo02, photo03, photo04 }) => {
+  console.log(photo01);
+
   const settings = {
     customPaging: function (i) {
       return (
         <a>
           <img
-            src={require(`../images/potato0${i + 1}.jpeg`).default}
+            // src={require(`../images/potato0${i + 1}.jpeg`).default}
+            // src={`potato0${i + 1}`}
+            // src={`potato0${i + 1}`}
+            // src={`photo0${i + 1}`}
+            src={photo01}
+            // src={(photo01, photo02)}
+            // src={photo0}
             alt="sound"
-          ></img>
+          ></img>{" "}
         </a>
       );
     },
@@ -29,16 +37,16 @@ export const CustomSlide = () => {
     <div className="mb-36">
       <Slider {...settings}>
         <div>
-          <img src={potato01} className=" w-80v h-40v" />
+          <img src={photo01} className=" w-80v h-30v sm:h-70v" />
         </div>
         <div>
-          <img src={potato02} className=" w-80v h-40v" />
+          <img src={photo02} className=" w-80v h-30v sm:h-70v" />
         </div>
         <div>
-          <img src={potato03} className=" w-80v h-40v" />
+          <img src={photo03} className=" w-80v h-30v sm:h-70v" />
         </div>
         <div>
-          <img src={potato04} className=" w-80v h-40v" />
+          <img src={photo04} className=" w-80v h-30v sm:h-70v" />
         </div>
       </Slider>
     </div>

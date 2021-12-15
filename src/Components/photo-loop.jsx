@@ -22,3 +22,15 @@ export const PhotoLoop = () => {
     </div>
   );
 };
+// <a>
+// /* <img
+// // src={require(`../images/potato0${i + 1}.jpeg`).default}
+// // src={`potato0${i + 1}`}
+// // src={`potato0${i + 1}`}
+// // src={`photo0${i + 1}`}
+// src={photo01}
+// // src={(photo01, photo02)}
+// // src={photo0}
+// alt="sound"
+// ></img> */
+// </a>

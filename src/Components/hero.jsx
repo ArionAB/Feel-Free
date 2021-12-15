@@ -42,9 +42,9 @@ function Hero() {
     autoplay: true,
     autoplaySpeed: 3000,
     cssEase: "linear",
-    speed: 500,
+    speed: 2000,
     slidesToShow: 1,
-    arrows: true,
+    arrows: false,
     slidesToScroll: 1,
     nextArrow: <SampleNextArrow />,
     prevArrow: <SamplePrevArrow />,
@@ -62,15 +62,23 @@ function Hero() {
                 ECHIPAMENTE SONORIZARE, ECHIPAMENTE DE LUMINI SI EFECTE SPECIALE
               </h3>
             </div>
-            <img src={crowd} className="h-70v w-80v" alt="photobooth" />
+            <img
+              src={crowd}
+              className="h-40v sm:h-70v w-80v"
+              alt="photobooth"
+            />
           </div>
           <div className="relative flex flex-col justify-center bg-center h-70v">
             <div className="absolute xl:top-1/3 xl:right-1/4 sm:top-1/3 sm:left-1/4 sm:right-1/4 top-1/4 left-1/5">
-              <h1 className="flex justify-center pb-8 text-6xl font-semibold text-pink">
+              <h1 className="flex justify-center pb-8 text-3xl ml-8 sm:ml-0 md:text-6xl font-semibold text-pink">
                 PHOTOBOOTH
               </h1>
             </div>
-            <img src={photobooth2} className="h-70v w-80v" alt="photobooth" />
+            <img
+              src={photobooth2}
+              className="h-40v sm:h-70v w-80v"
+              alt="photobooth"
+            />
           </div>
         </Slider>
       </div>

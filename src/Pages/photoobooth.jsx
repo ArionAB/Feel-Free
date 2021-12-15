@@ -2,6 +2,12 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { CustomSlidePB } from "../Components/custom-slide-pb";
 import { YoutubeEmbed } from "../Components/YoutubeEmbed";
+import { CustomSlide } from "../Components/custom-slide";
+import { Accesorii } from "../Pages/accesorii";
+import photo01 from "../images/custom-3.jpg";
+import photo02 from "../images/custom-4.jpg";
+import photo03 from "../images/custom-5.jpg";
+import photo04 from "../images/contact.jpg";
 
 export const Photobooth = () => {
   return (
@@ -178,7 +184,14 @@ export const Photobooth = () => {
           Cere Oferta
         </Link>
       </div>
-      <CustomSlidePB />
+      <CustomSlide
+        photo01={photo01}
+        photo02={photo02}
+        photo03={photo03}
+        photo04={photo04}
+      />
+
+      <Accesorii />
     </div>
   );
 };

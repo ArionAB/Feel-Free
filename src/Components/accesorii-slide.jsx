@@ -26,35 +26,35 @@ function AccSlide() {
             <img
               src={custom2}
               alt="photbooth images"
-              className="h-full w-full "
+              className="h-full w-full object-scale-down sm:object-fill "
             />
           </div>
           <div className=" h-40v">
             <img
               src={custom3}
               alt="photbooth images"
-              className="h-full w-full "
+              className="h-full w-full object-scale-down sm:object-fill "
             />
           </div>
           <div className=" h-40v">
             <img
               src={custom4}
               alt="photbooth images"
-              className="h-full w-full "
+              className="h-full w-full object-scale-down sm:object-fill "
             />
           </div>
           <div className=" h-40v">
             <img
               src={custom5}
               alt="photbooth images"
-              className="h-full w-full "
+              className="h-full w-full object-scale-down sm:object-fill "
             />
           </div>
           <div className=" h-40v flex flex-col justify-center bg-center relative">
             <img
               src={photobooth2}
               alt="photbooth images"
-              className=" h-full w-full 
+              className=" h-full w-full object-scale-down sm:object-fill 
             "
             />
           </div>

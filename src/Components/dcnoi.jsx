@@ -7,7 +7,7 @@ function Dcnoi() {
       <div className="mt-24">
         <div className="flex flex-col items-center text-gold">
           <h1 className="mb-8 text-6xl font-bold">Serviciile noastre</h1>
-          <p className="text-lg font-bold text-justify text-white lg:text-xl w-50v lg:text-center">
+          <p className="text-lg font-bold sm:text-justify text-white lg:text-xl w-50v lg:text-center">
             Alege serviciul care ți se potrivește sau alege-le pe toate.
             Creează-ți petrecerea visurilor tale, iar noi îți garantăm că
             invitații tăi nu vor rămâne mult timp pe scaune.

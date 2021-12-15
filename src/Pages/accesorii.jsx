@@ -3,14 +3,14 @@ import AccSlide from "../Components/accesorii-slide";
 import { PhotoLoop } from "../Components/photo-loop";
 import { PropsSlide } from "../Components/props-slide";
 
-const Accesorii = () => {
+export const Accesorii = () => {
   return (
     <div className="overflow-hidden">
-      <div className="bg-center bg-no-repeat bg-cover border-b-8 bg-accesorii w-80v h-80v border-gold"></div>
-      <div className="flex ">
-        <article className="text-white bg-opacity-100 w-40v bg-darkGrey">
+      <div className="hidden bg-center bg-no-repeat bg-cover border-b-8 bg-accesorii w-80v h-80v border-gold"></div>
+      <div className="flex-col lg:flex lg:flex-row">
+        <article className="text-white bg-opacity-100 lg:w-40v bg-darkGrey">
           <h1 className="p-8 text-3xl text-gold">DESIGN & PERSONALIZARE</h1>
-          <p className="px-8 text-justify">
+          <p className="px-8 sm:text-justify">
             Personalizate cu textele și culorile voastre și potrivite cu
             fundalurile de fotografiere, poți alege între formatele tip
             photostrip (5*15 cm), fotografie landscape (15*10 cm) sau fotografie
@@ -24,15 +24,15 @@ const Accesorii = () => {
             putem face împreună un concept nou pentru modelele fotografiilor!
           </p>
         </article>
-        <div className="overflow-hidden w-40v">
+        <div className="overflow-hidden  h-30v sm:h-40v lg:w-40v">
           <AccSlide />
         </div>
       </div>
-      <div className="flex ">
-        <div className="overflow-hidden w-40v">
+      <div className=" flex-col-reverse lg:flex lg:flex-row">
+        <div className="overflow-hidden h-30v sm:h-40v lg:w-40v">
           <PropsSlide />
         </div>
-        <article className="text-white bg-opacity-100 bg-darkGrey w-40v">
+        <article className="text-white bg-opacity-100 bg-darkGrey lg:w-40v">
           <h1 className="p-8 text-3xl text-gold">ACCESORII ȘI PROPSURI</h1>
           <p className="px-8 text-justify">
             Fiecare pachet de petrecere vine cu accesorii de party sau adaptate

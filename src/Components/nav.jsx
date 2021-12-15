@@ -51,7 +51,7 @@ export const Nav = () => {
         className={
           "" +
           (navbarOpen
-            ? " flex flex-col-reverse leading-10 md:flex md:flex-wrap md:max-h-24 md:w-96 md:leading-10 lg:flex "
+            ? " flex flex-col-reverse leading-10 md:flex md:flex-wrap md:max-h-24 md:w-96 md:leading-10 lg:flex mt-36 md:mt-0 bg-darkGrey md:bg-none px-4"
             : "hidden lg:flex lg:justify-between xl:w-3/4 lg:w-full   ")
         }
       >
@@ -67,7 +67,7 @@ export const Nav = () => {
           HOME
         </Link>
         <div
-          className="flex float-left overflow-hidden "
+          className=" flex float-left overflow-hidden "
           onMouseEnter={() => setShow(!show)}
           onMouseLeave={() => setShow(!show)}
         >
